@@ -1,0 +1,16 @@
+{
+  "tweets": [
+    { "url": "https://x.com/NASA/status/1234567890123456789", "limit": 500 }
+  ],
+  "searches": [
+    {
+      "query": "#contohhashtag lang:id since:2026-01-01 until:2026-02-01",
+      "limit": 300,
+      "product": "Latest",
+      "expand_replies": 0
+    }
+  ],
+  "users": [
+    { "username": "nasa", "limit": 100, "expand_replies": 20 }
+  ]
+} 
