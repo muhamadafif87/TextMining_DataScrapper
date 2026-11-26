@@ -1,0 +1,714 @@
+ python scripts/xpost.py tweet https://x.com/indepenSumatera/status/2076130809036325044?a=nnooOhPGh3FxOH170iQ     
+### Sumatera Adil & Federal (@indepenSumatera)
+URL: https://x.com/indepenSumatera/status/2076130809036325044  (source: fxtwitter)
+created: Sun Jul 12 02:25:32 +0000 2026
+likes=150 reposts=43 replies=86 quotes=11 bookmarks=16 views=22349
+
+Ayo DPR buat UU yang bisa menjerat para propaganda LGBT ini masuk penjara biar kembali normal akal sehatnya. Bukan kah ELGEBT ini termasuk ancaman negara non militer.
+
+Awak sangat mendukung bila para propaganda ini di tangkap dan di masukan kedalam penjara demi kewarasan akal sehat.
+media[videos]: https://video.twimg.com/amplify_video/2076130732825792512/vid/avc1/720x1280/K_HOz9sqOboDynDm.mp4?tag=28
+PS D:\Coolyeah\DatMin\TBP\coba\x-post-reader> python scripts/xpost.py replies 2076130809036325044 --count 100
+### ROOT POST: @indepenSumatera (2076130809036325044)  [likes=150, reposts=43, replies=86, bookmarks=16, Sun Jul 12 02:25]
+    Ayo DPR buat UU yang bisa menjerat para propaganda LGBT ini masuk penjara biar kembali normal akal sehatnya. Bukan kah ELGEBT ini termasuk ancaman negara non militer.  Awak sangat mendukung bila para propaganda ini di tangkap dan di masukan kedalam penjara demi kewarasan akal sehat.
+
+--- thread (1) ---
+@indepenSumatera (2076130809036325044)  [likes=150, reposts=43, replies=86, bookmarks=16, Sun Jul 12 02:25]
+    Ayo DPR buat UU yang bisa menjerat para propaganda LGBT ini masuk penjara biar kembali normal akal sehatnya. Bukan kah ELGEBT ini termasuk ancaman negara non militer.  Awak sangat mendukung bila para propaganda ini di tangkap dan di masukan kedalam penjara demi kewarasan akal sehat.
+
+--- replies (40) ---
+@IamYusan (2076138286104625374)  [likes=6, reposts=0, replies=2, bookmarks=0, Sun Jul 12 02:55]
+    @indepenSumatera Sudah terang²an sekarang wak, sudah sewajarnya DPR atau pejabat negara ini membuat tindakan, tapi susah juga wak kalau pejabat nya saja juga di duga menikmati hal yang sama, dan persoil keamanan nya saja di duga juga yang seperti itu.
+
+@indepenSumatera (2076142068477673971)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 12 03:10]
+    @IamYusan Bisa jadi wak
+
+@Lakauong (2076131239606812934)  [likes=5, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:27]
+    @indepenSumatera JANGAN KASIH TEMPAT UNTUK PARA PELAKU PENYIMPANGAN! #STAYNORMAL
+
+@indepenSumatera (2076135655315570859)  [likes=1, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:44]
+    @Lakauong Kasihan generasi selanjutnya
+
+@IndoagainstLGBT (2076182773690503637)  [likes=5, reposts=0, replies=0, bookmarks=0, Sun Jul 12 05:52]
+    @indepenSumatera dimana itu wak,   kacau bener ga ada yg nimpukin pake telor busuk
+
+@cigsaftermilk (2076224092735492558)  [likes=2, reposts=0, replies=0, bookmarks=0, Sun Jul 12 08:36]
+    @indepenSumatera @MiamiKoltahu ada penyanyi ga terkenal lagi
+
+@apahariiniwee (2076262027253919836)  [likes=1, reposts=1, replies=0, bookmarks=0, Sun Jul 12 11:06]
+    @indepenSumatera Baru tau ternyata ada lagu ini. Baru dgr juga.
+
+@ikur12_iwan (2076146247124271513)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 12 03:26]
+    @indepenSumatera lawan!!!!
+
+@June_JuniorTV (2076132466327527793)  [likes=1, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:32]
+    @indepenSumatera jangan kasih panggung para pasien penyakit mental ini. mereka seharusnya sedang rehabilitasi di rumah sakit jiwa.
+
+@lhgwsp (2076143538430259331)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 03:16]
+    @indepenSumatera Kalau memang mau membuat aturan, ukurannya harus berdasarkan tindakan yang melanggar hukum, bukan identitas atau pandangan seseorang. Negara hukum tetap perlu menjunjung hak dan proses yang adil.
+
+@IDNInsight (2076131881746407629)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:29]
+    @indepenSumatera Sudah sakit ini orang ya, udah bangga banget, ntah dibayar atau tidak, pasti digetok keluarganya kalau balik rumah
+
+@indepenSumatera (2076134862067831054)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 12 02:41]
+    @IDNInsight Wkwkwj
+
+@blythex999 (2076218154355962316)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 08:12]
+    @indepenSumatera Serangan barat emang keren sih wkwkwk indonesia dari timurl, uda mulai d acak2, sudah mengarah jadi negara barat dan liberal, nanti sebelah monas bikin patung liberty
+
+@bibah_z (2076226394434998308)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 08:45]
+    @indepenSumatera Longsor Gempa Banjir Ttsunami
+
+@mass_kho (2076139225079255159)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:58]
+    @indepenSumatera Sekejam kejam nya putin tapi dia masih punya OTAK WARAS  kata putin Tuhan hanya menciptakan dua jenis manusia  Perempuan dan laki laki  Sementara Indonesia.......
+
+@M_imam_com (2076139076802216056)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 02:58]
+    @indepenSumatera pak jendral dan prof @sjafriesjams @bang_dasco mohon di atensikan ini..demi generasi dan peradaban negeriku..@DPR_RI
+
+@Zara42hz (2076206564294439143)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 07:26]
+    @indepenSumatera mental illness
+
+@Harumberitabola (2076259887315931392)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 10:58]
+    @indepenSumatera Ngapain ginian di urusin selama kaga merugikan , yg penting itu perampasan aset koruptor.....
+
+@ligakonoha004 (2076276010174259399)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 12:02]
+    @indepenSumatera Ngeri wak. Berantasnya juga harus terang2 an sih, biar ngasih efek kejut ke penyembah boolnya
+
+@mydull_ (2076136949023457627)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 02:49]
+    @indepenSumatera nah harus sih ini segera dibuat wak, bahaya kali
+
+@15Seveb (2076141412345946316)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 03:07]
+    @indepenSumatera setuju min. udah darurat ini
+
+@indepenSumatera (2076141905998692461)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 12 03:09]
+    @15Seveb Udah diluar batas wak
+
+@haryadieko82 (2076290525972594844)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 13:00]
+    @indepenSumatera Parahh, sudah g tau maluu
+
+@Seporsidaging (2076136863652606000)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 02:49]
+    @indepenSumatera Yang kaya gini bisa sembuh gak sih 😩
+
+@zam25257 (2076265949246955566)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 11:22]
+    @indepenSumatera Wah bahaya udh mulai berani, harus di tindak si...
+
+@NextOrja (2076131911693644257)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:29]
+    @indepenSumatera Anjirlah, mana kemarin ada yng ubah lagu orang jadi mesum bener juga🗿
+
+@indepenSumatera (2076135106402726369)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:42]
+    @Orangjutawan 🥺
+
+@NextOrja (2076135369675059508)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 02:43]
+    @indepenSumatera Makin rusak dah Negera kita min😭
+
+@jouragand (2076144473831334002)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 03:19]
+    @indepenSumatera Kok makin aneh aja ini penyanyi lebel bawah ini, kemarin ada yang nyanyi aku diprkzza aku gpp, aku di lchkan aku gpp.. sakit kurasa ni orang
+
+@indepenSumatera (2076147281427079554)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 03:30]
+    @jouragand 😀
+
+@0X1AN9WIN (2076131531186172058)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:28]
+    @indepenSumatera Makin menjadi jadi aja  manusia sekarang, jangan kasih tempat .
+
+@indepenSumatera (2076134933018640685)  [likes=1, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:41]
+    @0xzyiiooo Harus di hukum sih supaya jerah wak
+
+@0X1AN9WIN (2076139508966588858)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 03:00]
+    @indepenSumatera Nah bener Wak, jadi wabah penyakit ini kaum gak jelas
+
+@Indrovertt (2076134837342339529)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 02:41]
+    @indepenSumatera Suara jelek, lirik jelek dan maksa. Cancel culture! Kalo masih ada eo yg undang ni orang fix nantangin negara.
+
+@Bapak2rame (2076278161961361807)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 12:11]
+    @indepenSumatera Yang kaya gini dibiarkan bahaya sih, dianggap diperbolehkan oleh kaum2 itu lagi
+
+@YaQoyyum01 (2076132532333191211)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 02:32]
+    @indepenSumatera Astaghfirullahaladziim Aku hanya berdo,a moga keluarga ku dilindungi , miriiis
+
+@indepenSumatera (2076135346220450140)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 02:43]
+    @EasyLSN84 🙏
+
+@irregularstate (2076156783291412597)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 04:08]
+    @indepenSumatera geus araraneh sia
+
+@GshitLink1 (2076263448212853228)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 11:12]
+    @indepenSumatera kalo dibiarkan lama2 pedhopil juga unjuk gigi, trs minta di legalkan... padahal thn 80an sama tu homo, lesbi dkk sekelas sama pedhopil, penyakit menyimpang
+
+@iamdroe (2076144179420479636)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 12 03:18]
+    @indepenSumatera karena kita gak 'lagibete'
+
+(more available: --cursor DAAKCgABHYCaC92__p8LAAIAAAHQRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUNrY3orb1krUnBCWEJ6UWFnZmFHaURISE0vcVlQQ2JnS3NjeisxOWtScUFlQnpQNmFnL1c1RU9ITS9tOGxaYm9NMGN6K1pjMDlzQkJoelA4aUdjMmtDVUhOQjNPNU1iQUp3YzBCVTdpcHVSMVJ6UDhCQktXc0J0SE0vcmppZWJRVnNjei8yWUxob3dkUnpQOFl4ZTI3Q0RITkJnNFZ3YW9DNGN6L0EySHR0Qjh4elA3ZUl3RzRHNkhNL3A0U0xhTWVFYzBEVnBQcHF4ekJ6UDYzcEhHM0F3SE0vc3hYZmF3TjRjei9KbUtSdGdjaHpRT3MvaG0xSE9ITS8wODlyYW9ZSWN6K2VKMEZvZ0t4elFYVkF6R2pCY0hNL21vTGRXOEpvYzBEem55WmFRSkJ6UUt0NjVHckRuSE0vbStVOWFNZUVjeisyZ0Z4cVFkeHpQNTNweUc2RnhITkJiWGZUYjBRQWN6K21pZlpxQnlSelA5QU1KbWtHWkhOQmVtd3JhMGV3YzBHdjgycHVoanh6UDZoNXZHekUwSE0vcHVNUmJBUzBjeitYNGs5ckF0QnpQNzUxYVc2RE0IAAMAAAACCwAEAAAABkJvdHRvbQAA)
+
+ python scripts/xpost.py tweet https://x.com/gigpagh/status/2075852389001888176?a=MOob9_7_AQa326dolLM     
+### 🎈 (@gigpagh)
+URL: https://x.com/gigpagh/status/2075852389001888176  (source: fxtwitter)
+created: Sat Jul 11 07:59:11 +0000 2026
+likes=120 reposts=18 replies=19 quotes=71 bookmarks=69 views=540138
+
+
+media[videos]: https://video.twimg.com/amplify_video/2075851924415594498/vid/avc1/720x1280/CCwAA4LSD_W5MrXT.mp4?tag=28
+(.venv) PS D:\Coolyeah\DatMin\TBP\coba\x-post-reader> python scripts/xpost.py replies 2075852389001888176 --count 100                                            
+### ROOT POST: @gigpagh (2075852389001888176)  [likes=120, reposts=18, replies=19, bookmarks=69, Sat Jul 11 07:59]
+    
+
+--- thread (1) ---
+@gigpagh (2075852389001888176)  [likes=120, reposts=18, replies=19, bookmarks=69, Sat Jul 11 07:59]
+    
+
+--- replies (17) ---
+@areumdowoonie (2076231727794573765)  [likes=233, reposts=27, replies=4, bookmarks=5, Sun Jul 12 09:06]
+    @gigpagh Beliau ini menganggap LGBT melanggar HAM karena LGBT MERAYU LELAKI?  Lah??? Itu mah makanan sehari-hari buat perempuan, Bang! Perempuan jadi korban rayuan, catcalling, bahkan korban pemerkosaan LAKI-LAKI.  Dengan logika yang sama, berarti laki-laki juga melanggar HAM dong 😔🙏🙏
+
+@qatruh (2076363312410014146)  [likes=72, reposts=6, replies=1, bookmarks=1, Sun Jul 12 17:49]
+    @gigpagh baru di periode si wowo ini dah ampe ke aksi kamisan pun kena goreng anj  yg mesti lo ludahin noh si wowo n the gang, yg nyawit mereka, yg babat hutan mereka, yg korupsi mereka, pas longsor yg disalahin siapa? lgbt (longsor gempa banjir tsunami) emang anjing rakyat indon
+
+@rarasyant_ (2076480896472174902)  [likes=19, reposts=0, replies=0, bookmarks=0, Mon Jul 13 01:36]
+    @gigpagh lo ngangeo lgbt ngkanggar ham krna mereka *merayu laki"? bayangin deh kaum kaum lu yang sering cat calling cwe, ngrayu sana sini apa itu juga ga melanggar HAM seorang perempuan?
+
+@marlborovista16 (2076323779542982728)  [likes=19, reposts=0, replies=0, bookmarks=1, Sun Jul 12 15:12]
+    @gigpagh Modelqn begitu siapa yg mau ngegoda anjeng? Palede bgt najis. Yg ada dia yg jadi pelaku yg suka ngegodain cewe.  Nih abang2 badan segitu gw hantam ilang kali ya nyawanya
+
+@nav_renz (2076309356795121825)  [likes=10, reposts=0, replies=2, bookmarks=0, Sun Jul 12 14:15]
+    @gigpagh LGBT melanggar HAM darimana nya nih? Melanggar HAMnya siapa nih?
+
+@Kahanan2 (2076324065720307753)  [likes=8, reposts=1, replies=0, bookmarks=0, Sun Jul 12 15:13]
+    @gigpagh Ooh bentukannya bgini.. awas kena ludahnya pada TBC loh KALIAN..
+
+@revelioncr49 (2076236500631793687)  [likes=6, reposts=0, replies=0, bookmarks=0, Sun Jul 12 09:25]
+    @gigpagh Bahkan acara untuk korban 98 mau dirubah jadi normalisasi penyimpangan
+
+@suaraseattle (2076252003471372297)  [likes=4, reposts=0, replies=0, bookmarks=0, Sun Jul 12 10:27]
+    @gigpagh kumis lu macam jembut gw
+
+@tawa_jeroris (2076284694094827599)  [likes=2, reposts=0, replies=0, bookmarks=0, Sun Jul 12 12:37]
+    @gigpagh boti caper dijalan
+
+@sachiomogu (2075900296438673808)  [likes=2, reposts=0, replies=1, bookmarks=0, Sat Jul 11 11:09]
+    @gigpagh Hitam tetaplah hitam jangan ada pelangi
+
+@Alexxxx71332099 (2076394550944567368)  [likes=2, reposts=0, replies=0, bookmarks=0, Sun Jul 12 19:53]
+    @gigpagh Sialan anj lu gue sumpah lu dapat karma menindas kami qeer minoritas bgst lu.
+
+@ddritth (2076322118128841112)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 12 15:05]
+    @gigpagh Kalo soal ngegoda mah queers juga gak mau ngegoda elu begoooo, tattoo lu tuh ijo
+
+@TejaAru05798875 (2076606073717600440)  [likes=1, reposts=0, replies=0, bookmarks=0, Mon Jul 13 09:54]
+    @gigpagh Kaga kuat banget gue liat dia yapping😭😭😭
+
+@Hoki2xlipat (2076493959506137344)  [likes=1, reposts=0, replies=0, bookmarks=0, Mon Jul 13 02:28]
+    @gigpagh Kok pede baget ngmng gini ya 🥲
+
+@ibunyancip (2076331957030633761)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 12 15:44]
+    @gigpagh Nye nye nye
+
+@alf_rd0 (2076316836082450768)  [likes=0, reposts=0, replies=1, bookmarks=0, Sun Jul 12 14:44]
+    @gigpagh Bukannya tetep bebas orientasi seksualnya, yg ngga boleh bikin campaign soal itu ya
+
+@syirqi (2076168926900441521)  [likes=0, reposts=0, replies=0, bookmarks=1, Sun Jul 12 04:57]
+    @gigpagh kirain pake suara ai njir
+
+(more available: --cursor DAAKCgABHYCadK1__1MLAAIAAADcRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUJJYzBFWVkwZHV3Rnh6UWNlMjhHbEJQSE5DVmVnWmJJRWdjMEloYjk1ZlFvUnpRMWRmR201QklITkJVTWxzYXNBa2MwTGx1Zk5veHdoelFRY0dPbDFIRkhOQ1BLVi9iZ1ZBY3p4UlNMbHJ4a0J6UmxqakNXekM0SE5DVnZLZmFrQ2tjenVpLzNKcUJzQnpRay9jeVd6R1lITkNjNmY2YVFTRWMwQWlqbFpyUnNSelJNRUVpbTVFQUhORWtYNmtiMFRZPQgAAwAAAAILAAQAAAAGQm90dG9tAAA)
+
+ python scripts/xpost.py tweet https://x.com/NakesPuskesmas/status/2073282904009199880?a=JsikAg-eqyglO3yGh8A     
+### Nakes Puskesmas (@NakesPuskesmas)
+URL: https://x.com/NakesPuskesmas/status/2073282904009199880  (source: fxtwitter)
+created: Sat Jul 04 05:48:58 +0000 2026
+likes=47 reposts=12 replies=13 quotes=12 bookmarks=13 views=11764
+
+Pemerintah Indonesia melalui Peraturan Presiden No. 111 Tahun 2025 resmi menetapkan LGBTQ sebagai salah satu Ancaman Nonmiliter yang dapat menganggu ketahanan negara.
+
+Bahkan, fenomena LGBTQ ditempatkan sejajar dengan isu-isu krusial lainnya seperti terorisme, radikalisme, narkotika, judi online, pinjol hingga wabah penyakit.
+
+Menarik ini 😌
+media[photos]: https://pbs.twimg.com/media/HMXHzs9bMAAxmZC.jpg?name=orig
+PS D:\Coolyeah\DatMin\TBP\coba\x-post-reader> python scripts/xpost.py replies 2073282904009199880 --count 100                                            
+### ROOT POST: @NakesPuskesmas (2073282904009199880)  [likes=47, reposts=12, replies=13, bookmarks=13, Sat Jul 04 05:48]
+    Pemerintah Indonesia melalui Peraturan Presiden No. 111 Tahun 2025 resmi menetapkan LGBTQ sebagai salah satu Ancaman Nonmiliter yang dapat menganggu ketahanan negara.  Bahkan, fenomena LGBTQ ditempatkan sejajar dengan isu-isu krusial lainnya seperti terorisme, radikalisme, narkotika, judi online, pinjol hingga wabah penyakit.  Menarik ini 😌
+
+--- thread (1) ---
+@NakesPuskesmas (2073282904009199880)  [likes=47, reposts=12, replies=13, bookmarks=13, Sat Jul 04 05:48]
+    Pemerintah Indonesia melalui Peraturan Presiden No. 111 Tahun 2025 resmi menetapkan LGBTQ sebagai salah satu Ancaman Nonmiliter yang dapat menganggu ketahanan negara.  Bahkan, fenomena LGBTQ ditempatkan sejajar dengan isu-isu krusial lainnya seperti terorisme, radikalisme, narkotika, judi online, pinjol hingga wabah penyakit.  Menarik ini 😌
+
+--- replies (12) ---
+@adryan_2407 (2073427781485232405)  [likes=7, reposts=0, replies=0, bookmarks=0, Sat Jul 04 15:24]
+    @NakesPuskesmas Peraturan Presiden blablablabla salah satu Ancaman Non-militer blablabla..  Melihat presiden skrng juga diisukan bgitu, mustahil dia 'nembak' kepala dia sendiri kan. Perpres cuman jadi formalitas/pajangan alias ngasih makan ego org" doang. Tontonin aja tuh pajangan
+
+@indrakusuma (2073290165980930377)  [likes=4, reposts=1, replies=0, bookmarks=0, Sat Jul 04 06:17]
+    @NakesPuskesmas Memang bukan penyakit Tapi ancaman non militer Memang bukan lagi pasien Tapi naik  pangkat setara teroris  Tidak lagi perlu diobati Tapi kena eradikasi Tak lagi di alienasi Tapi diburu bapak TNI
+
+@icalbhimaa (2073377589067186605)  [likes=3, reposts=0, replies=1, bookmarks=0, Sat Jul 04 12:05]
+    @NakesPuskesmas tapi apakah pemerintah akan memeranginya min? sementara di sebelah pimpinan tertinggi aja yang jadi orang kepercayaan itu BOTI
+
+@wiratamiang (2073531796088824151)  [likes=1, reposts=0, replies=1, bookmarks=0, Sat Jul 04 22:17]
+    @NakesPuskesmas Gerakan LGBT ini emg masif, bahkan ada penyokong dananya secara internasional
+
+@belajararif (2073399512711012436)  [likes=1, reposts=0, replies=0, bookmarks=0, Sat Jul 04 13:32]
+    @NakesPuskesmas seratus persen mendukung penuh pemerintah dalam hal ini.
+
+@dedentist1966 (2073293669151756601)  [likes=1, reposts=0, replies=0, bookmarks=0, Sat Jul 04 06:31]
+    @NakesPuskesmas Wah, kemajuan besar dari pememrintah ini. Memang sudah seharusnya pemerintah bersikap tegas,  jelas dimana posisinya
+
+@szmnxyb (2073639037559296388)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 05 05:24]
+    @NakesPuskesmas Ga menarik,.  Jelas ga ada kaitannya sama isu krusial lainnya,.  Ini mah lempar batu sembunyi tangan
+
+@man_boedi96578 (2073286865700982903)  [likes=0, reposts=0, replies=0, bookmarks=0, Sat Jul 04 06:04]
+    @NakesPuskesmas Heleh,smua undang2 dibikin cuma buat pajangan doank..🥲
+
+@issukio (2073721388637233223)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 05 10:51]
+    @NakesPuskesmas so human rights violator is an acceptable country leaders, but queer ppl trying to live their life is a threat? you gotta be joking.
+
+@NoBody_10069 (2073323401209663976)  [likes=0, reposts=0, replies=0, bookmarks=0, Sat Jul 04 08:29]
+    @NakesPuskesmas indo,malay,arab,brunei,rusia,dll apalagi
+
+@Caplin_15 (2073292336801706311)  [likes=0, reposts=0, replies=0, bookmarks=0, Sat Jul 04 06:26]
+    @NakesPuskesmas moga dijauhkan sma golongan ini ah, ngerii
+
+@biztechid (2073287384029077543)  [likes=1, reposts=0, replies=0, bookmarks=0, Sat Jul 04 06:06]
+    Bagus setuju, sudah nyata betul kerugian finansial dan sosial dari gerakan LGBTQ tersebut.  Di asuransi mobil saja tidak akan cover apabila penggunaan mobil tidak sesuai dengan peruntukan dan melanggar hukum. Harusnya sama juga diterapkan pada gerakan tersebut. Apabila penggunaan badan tidak sesuai peruntukan, maka tidak dicover BPJS dan atau asuransi lainnya.  Gambar hanya contoh regulasi asuransi mobil.
+
+(more available: --cursor DAAKCgABHYCb9_6__4ULAAIAAACoRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUEwY3hjNXIwNXFoU1J6R0hlNlptd0d0SE1Yc3BnR2JVZWdjeGN2a0dsb2dKeHpGeTJ0cmx4QjNITWRXbmF6YUlFY2N4d3UzMGhyUmhCekdTNVR1Mm9FVkhNWFFaVUthOFVjY3hkR2JlTnRST1J6R01kOFltNkJVSE1hcUxyaGFJVmNjeGNmUkJGdlJDQT09CAADAAAAAgsABAAAAAZCb3R0b20AAA)
+
+python scripts/xpost.py tweet https://x.com/NenkMonica/status/2073292272670785677?a=dqbUpD86mmms8aqnzTQ     
+### 𝕸𝖔𝖓𝖎𝖈𝖆 ᴼᶠᶠⁱᶜⁱᵃˡ (@NenkMonica)
+URL: https://x.com/NenkMonica/status/2073292272670785677  (source: fxtwitter)
+created: Sat Jul 04 06:26:12 +0000 2026
+likes=79 reposts=38 replies=16 quotes=5 bookmarks=6 views=20350
+
+PRESIDEN PRABOWO TEGASKAN PENYEBARAN BUDAYA LGBT SEBAGAI ANCAMAN NON-MILITER BAGI KETAHANAN BANGSA.
+
+Jakarta, 4 Juli 2026 – Presiden Prabowo Subianto menegaskan sikap tegas pemerintah terhadap penyebaran budaya Lesbian, Gay, Biseksual, Transgender, dan Queer (LGBTQ) dengan mengkategorikannya sebagai salah satu ancaman non-militer di bidang sosial dan budaya. 
+
+Langkah ini tertuang dalam Peraturan Presiden (Perpres) Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025–2029 yang baru saja disahkan.
+
+“Pertahanan negara bukan hanya soal militer, tetapi juga melindungi nilai-nilai luhur bangsa, Pancasila, dan ketahanan keluarga dari pengaruh yang dapat menggerus jati diri Indonesia,” ujar sumber di lingkaran Istana yang menjelaskan substansi Perpres tersebut.
+
+Menurut lampiran Perpres, penyebaran budaya LGBTQ dinilai berpotensi mengganggu stabilitas nasional karena bersifat terorganisir, bekerja dalam jangka panjang, dan bertentangan dengan nilai agama serta norma masyarakat Indonesia. Pemerintah menekankan pentingnya menjaga ketahanan sosial-budaya agar generasi mendatang tetap kuat dan selaras dengan identitas bangsa.
+media[videos]: https://video.twimg.com/ext_tw_video/2073291047875289088/pu/vid/avc1/480x600/b5RjNPVNSO69_h8l.mp4?tag=26
+PS D:\Coolyeah\DatMin\TBP\coba\x-post-reader> python scripts/xpost.py replies 2073292272670785677 --count 100                                        
+### ROOT POST: @NenkMonica (2073292272670785677)  [likes=79, reposts=38, replies=16, bookmarks=6, Sat Jul 04 06:26]
+    PRESIDEN PRABOWO TEGASKAN PENYEBARAN BUDAYA LGBT SEBAGAI ANCAMAN NON-MILITER BAGI KETAHANAN BANGSA.  Jakarta, 4 Juli 2026 – Presiden Prabowo Subianto menegaskan sikap tegas pemerintah terhadap penyebaran budaya Lesbian, Gay, Biseksual, Transgender, dan Queer (LGBTQ) dengan mengkategorikannya sebagai salah satu ancaman non-militer di bidang sosial dan budaya.   Langkah ini tertuang dalam Peraturan Presiden (Perpres) Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025–2029 yang baru saja disahkan.  “Pertahanan negara bukan hanya soal militer, tetapi juga melindungi nilai-nilai luhur bangsa, Pancasila, dan ketahanan keluarga dari pengaruh yang dapat menggerus jati diri Indonesia,” ujar sumber di lingkaran Istana yang menjelaskan substansi Perpres tersebut.  Menurut lampiran Perpres, penyebaran budaya LGBTQ dinilai berpotensi mengganggu stabilitas nasional karena bersifat terorganisir, bekerja dalam jangka panjang, dan bertentangan dengan nilai agama serta norma masyarakat Indonesia. Pemerintah menekankan pentingnya menjaga ketahanan sosial-budaya agar generasi mendatang tetap kuat dan selaras dengan identitas bangsa.
+
+--- thread (1) ---
+@NenkMonica (2073292272670785677)  [likes=79, reposts=38, replies=16, bookmarks=6, Sat Jul 04 06:26]
+    PRESIDEN PRABOWO TEGASKAN PENYEBARAN BUDAYA LGBT SEBAGAI ANCAMAN NON-MILITER BAGI KETAHANAN BANGSA.  Jakarta, 4 Juli 2026 – Presiden Prabowo Subianto menegaskan sikap tegas pemerintah terhadap penyebaran budaya Lesbian, Gay, Biseksual, Transgender, dan Queer (LGBTQ) dengan mengkategorikannya sebagai salah satu ancaman non-militer di bidang sosial dan budaya.   Langkah ini tertuang dalam Peraturan Presiden (Perpres) Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025–2029 yang baru saja disahkan.  “Pertahanan negara bukan hanya soal militer, tetapi juga melindungi nilai-nilai luhur bangsa, Pancasila, dan ketahanan keluarga dari pengaruh yang dapat menggerus jati diri Indonesia,” ujar sumber di lingkaran Istana yang menjelaskan substansi Perpres tersebut.  Menurut lampiran Perpres, penyebaran budaya LGBTQ dinilai berpotensi mengganggu stabilitas nasional karena bersifat terorganisir, bekerja dalam jangka panjang, dan bertentangan dengan nilai agama serta norma masyarakat Indonesia. Pemerintah menekankan pentingnya menjaga ketahanan sosial-budaya agar generasi mendatang tetap kuat dan selaras dengan identitas bangsa.
+
+--- replies (14) ---
+@HamdanLape571 (2073352571314634901)  [likes=5, reposts=0, replies=0, bookmarks=0, Sat Jul 04 10:25]
+    @NenkMonica Ancaman?
+
+@ramzanrachmat (2073337294992335339)  [likes=2, reposts=0, replies=0, bookmarks=0, Sat Jul 04 09:25]
+    betul banget, presiden prabowo udh tegas dan jelas soal ancaman budaya lgbt ini. ini bukan cuma masalah agama atau moral, tapi juga tentang menjaga ketahanan bangsa. budaya lgbt yang masuk ke indonesia itu jelas bertentangan sama nilai pancasila dan norma masyarakat kita.  perpres no 111 tahun 2025 ini jadi bukti pemerintah serius menjaga identitas bangsa. lgbt itu bukan cuma masalah individu, tapi udh jadi ancaman terorganisir yang bisa menggerus jati diri indonesia. ini udh jadi perhatian global, makanya pemerintah harus ambil langkah tegas.  klo kita biarin, generasi muda kita bisa terpapar budaya yang tidak sesuai dengan nilai-nilai kita. makanya, pemerintah fokus pada ketahanan sosial-budaya agar generasi mendatang tetap kuat dan selaras dengan identitas bangsa.  untuk netizen yang masih ragu atau kurang paham, coba baca lagi perpresnya. pemerintah udh jelas soal ini, dan ini demi masa depan indonesia yang lebih baik. kita harus dukung langkah ini agar nilai-nilai luhur bangsa tetap terjaga.
+
+@alipfadilah1 (2073470705711349996)  [likes=1, reposts=0, replies=0, bookmarks=0, Sat Jul 04 18:15]
+    @NenkMonica Sepertinya cuma untuk pereda saja, dilingkaran istana ada tuh… 😁
+
+@boxbonzaii (2073573480914968751)  [likes=1, reposts=0, replies=0, bookmarks=0, Sun Jul 05 01:03]
+    @NenkMonica hukum mati LGBTQ, mereka sampah, hama peradaban
+
+@herykusriyanto (2073597201591501009)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 05 02:37]
+    @NenkMonica Mereka dipelihara demi kepentingan politik
+
+@ade_rusmaya (2073620566607811007)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 05 04:10]
+    @NenkMonica HHH...percaya gk ya.,???
+
+@Kinkin18051341 (2073294275471897012)  [likes=0, reposts=0, replies=0, bookmarks=0, Sat Jul 04 06:34]
+    @NenkMonica Lha?
+
+@AyahZah97700713 (2073302851229819104)  [likes=0, reposts=0, replies=0, bookmarks=0, Sat Jul 04 07:08]
+    @NenkMonica alhamdulillah
+
+@thewinarkos (2073590672771440850)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 05 02:11]
+    @NenkMonica Bisa di mulai dari lingkaran ⭕️
+
+@BuchroniK (2073336995229901294)  [likes=0, reposts=1, replies=0, bookmarks=0, Sat Jul 04 09:23]
+    @NenkMonica Kasih tahu .. waspadalah terhadap penyuka Liang Taik..
+
+@man_boedi96578 (2073339113714094418)  [likes=0, reposts=0, replies=0, bookmarks=0, Sat Jul 04 09:32]
+    @NenkMonica Josss ..tp Ojo mung omon2 ae, praktekan
+
+@Adit_yapramudya (2073716400301211662)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 05 10:31]
+    @NenkMonica LGBT itu seperti korupsi, bersihkan dulu di sekitar istana sebelum kemana-mana. Pelakunya banyak yg tersembunyi dan bahkan terang terangan melambai dari dalam istana. Jadi jangan omon omon doang seolah itu pelakunya antek asing yg jauh padahal malah bergelayut manja pd Presiden.
+
+@gak_stm (2073664318814777718)  [likes=0, reposts=0, replies=0, bookmarks=0, Sun Jul 05 07:04]
+    @NenkMonica Colek bunted dong
+
+@25MIQ25 (2073302517191192777)  [likes=0, reposts=0, replies=0, bookmarks=0, Sat Jul 04 07:06]
+    @NenkMonica Ucapan vs Hati
+
+(more available: --cursor DAAKCgABHYCcM-N__2cLAAIAAAC8RW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUE4Y3h5SzJFbHR4ZGh6RjJhZVJHckRKSE1YWjlWZGJvT0FjeHZyck41cFJ2eHpHNWFzZ0d3RFJITVg1U09lV1llc2N4ZmtESEZxaDdoekcwQmc1bTJDdkhNWDY4RnZhRVZJY3gxSVVQTnNBRGh6R2NwOENHb0RzSE1YUVZsUWF3STBjeGRJb3BGcHh0QnpHQnkyeldnQ1ZITWJmdXdRYTROST0IAAMAAAACCwAEAAAABkJvdHRvbQAA)
+
+python scripts/xpost.py tweet https://x.com/tempodotco/status/2074040658583826557?a=wvNqNbI_7yhLbSF0izw     
+### tempo.co (@tempodotco)
+URL: https://x.com/tempodotco/status/2074040658583826557  (source: fxtwitter)
+created: Mon Jul 06 08:00:01 +0000 2026
+likes=6239 reposts=773 replies=864 quotes=4150 bookmarks=806 views=3194888
+
+Lewat Perpres 111/2025: Prabowo Tetapkan LGBTQ Jadi Ancaman Nonmiliter
+media[photos]: https://pbs.twimg.com/media/HMhtKpkb0AAWq0T.jpg?name=orig
+PS D:\Coolyeah\DatMin\TBP\coba\x-post-reader> python scripts/xpost.py replies 2074040658583826557 --count 1000                                       
+### ROOT POST: @tempodotco (2074040658583826557)  [likes=6240, reposts=773, replies=864, bookmarks=806, Mon Jul 06 08:00]
+    Lewat Perpres 111/2025: Prabowo Tetapkan LGBTQ Jadi Ancaman Nonmiliter
+
+--- thread (1) ---
+@tempodotco (2074040658583826557)  [likes=6240, reposts=773, replies=864, bookmarks=806, Mon Jul 06 08:00]
+    Lewat Perpres 111/2025: Prabowo Tetapkan LGBTQ Jadi Ancaman Nonmiliter
+
+--- replies (35) ---
+@thxorns (2074048670392299531)  [likes=2677, reposts=306, replies=20, bookmarks=18, Mon Jul 06 08:31]
+    @tempodotco @prabowo pedophilia terutama yang kiai2 agama itu kok ga dijadiin ancaman nonmiliter juga?
+
+@divisidanus (2074047673339093185)  [likes=1689, reposts=156, replies=22, bookmarks=29, Mon Jul 06 08:27]
+    @tempodotco Cara identifikasinya gimana coba? Kalian yang laki-laki jangan asal setuju aja, gaada yang jamin kalian gak akan dituduh gay. Begitu juga perempuan.
+
+@ai_hathaway (2074080907326349407)  [likes=1238, reposts=191, replies=8, bookmarks=31, Mon Jul 06 10:39]
+    @tempodotco Q-nya : Qiqiqiqi
+
+@RQ0067469484335 (2074058452721438897)  [likes=1050, reposts=68, replies=5, bookmarks=9, Mon Jul 06 09:10]
+    @tempodotco Kok beda sih Ama ini.
+
+@chillbysuk (2074048613181976691)  [likes=955, reposts=54, replies=11, bookmarks=6, Mon Jul 06 08:31]
+    @tempodotco lagi putus kah sama bunted? nanti kalo balikan beda lagi statement nya
+
+@soup27_ (2074058830909206669)  [likes=884, reposts=66, replies=4, bookmarks=4, Mon Jul 06 09:12]
+    @tempodotco udah ketebak wkwkw, lgbtq dijadiin bahan buat konflik horizontal. homophobic indon mau-mau aja dikendalikan
+
+@coconvo (2074044514919182417)  [likes=511, reposts=9, replies=1, bookmarks=2, Mon Jul 06 08:15]
+    @tempodotco Anu itu lagi ga nyindir diri sendiri kan ya? Hehe..
+
+@aldapstsr (2074071681778499644)  [likes=309, reposts=28, replies=0, bookmarks=3, Mon Jul 06 10:03]
+    @tempodotco
+
+@pacarkanghaneul (2074179026105913768)  [likes=89, reposts=23, replies=0, bookmarks=2, Mon Jul 06 17:09]
+    @tempodotco Kualitas pendidikan rendah, kuliah mahal, dosen underpaid, BPJS kesehatan nyaris bangkrut, rupiah lemah, anak2 keracunan MBG & korban meninggal main tentara2an KDMP belum ditindaklanjuti dg layak, dst.. tp yg diurusin perkara jenis kelamin apa yg bikin seseorang terangsang? WTAF.
+
+@FreakyBatman_ (2074043744266187150)  [likes=78, reposts=1, replies=1, bookmarks=1, Mon Jul 06 08:12]
+    @tempodotco Semua sumber suara kritis di lobby & di gembosi tak terkecuali sentimen organik yg sebelumnya tidak pernah dia pikirkan.  Artinya apa? Artinya istana sedang tidak baik-baik saja.
+
+@cunkmusk (2074048198671470854)  [likes=48, reposts=0, replies=0, bookmarks=0, Mon Jul 06 08:29]
+    @tempodotco jangan tanya "apa yg terjadi di dalam pesawat pribadi presiden?"
+
+@giancholil (2074046643452989637)  [likes=31, reposts=1, replies=0, bookmarks=0, Mon Jul 06 08:23]
+    @tempodotco apa urgensi nya neken perpres ini?
+
+@RayanDoyza (2074041948302967241)  [likes=16, reposts=0, replies=2, bookmarks=0, Mon Jul 06 08:05]
+    @tempodotco Ancaman? Ada aturan yg diturunkan dari Perpres ini kah? Gimana pemrintah menghadapi ini? Atau ini cuma perpres tanpa ada tindak lanjut dan terkesan buat rame2 aja?
+
+@princeruu (2074049306160701879)  [likes=15, reposts=0, replies=0, bookmarks=0, Mon Jul 06 08:34]
+    @tempodotco ancaman no.1 tuh kebodohan dan kemiskinan sih. no.2 hobi miara koruptor
+
+@ndah_345yw1n (2074053690689024181)  [likes=12, reposts=2, replies=1, bookmarks=0, Mon Jul 06 08:51]
+    Kalau kaya gini gak masalah, yg jdi masalah nnti ketika ada pasal UU nya, bisa jdi boomerang oleh oknum2 yg gk bertanggung jawab untk menjebloskan ke penjara, nnti gak doyan sejenis bsa di salah artikan doyan sejenis, ngeri lah klo org gk ngapa2in trus ada pasal LGBT ini bsa jdi senjata org2 yg gk suka buat bikin narasi, bayar saksi buat menguatkan klo si A / B ini telah ngisep kenti aku misalnya gtu..🤣  Ati2 loh yg koar2 setuju tangkap bowtie, ujung2nya bsa aja kamu yg jdi korban fitnahannya yg berujung keroyokan.
+
+@17Milyar (2074072198781002107)  [likes=11, reposts=1, replies=2, bookmarks=1, Mon Jul 06 10:05]
+    @tempodotco gk ada pembelaan lagi buat kaum shodom
+
+@_marionettemu (2074060841360761304)  [likes=9, reposts=0, replies=0, bookmarks=0, Mon Jul 06 09:20]
+    @tempodotco Homo teriak anti Homo adalah denial final bos
+
+@6u5tiLiem (2074176978975154565)  [likes=9, reposts=0, replies=0, bookmarks=2, Mon Jul 06 17:01]
+    @tempodotco di perpres 111/2025 lgbtq disamakan dengan kejahatan non militer seperti pinjol, judol, premanisme, pencurian sda dsb  pertanyaannya: apakah tindakan keras ke pinjol, judol, premanisme, pencurian sda akan segencar ke lgbt? atau cuma buat pencitraan peduli moral?
+
+@rocketokun (2074058703020704151)  [likes=8, reposts=0, replies=3, bookmarks=1, Mon Jul 06 09:11]
+    @tempodotco Ini jadi darurat militer tuh apa gua tanya urgensinya? Karena dilarang agama? Ini negara bukan berlandaskan hukum agama. Plus gausah sok2 suci. Antek2 dia aja udah berapa banyak yg korupsi terang2an? Apalagi kalo ini bukan buat kontrol masyarakat dgn cara yg kotot
+
+@incelamretrd (2074416169059336445)  [likes=8, reposts=0, replies=1, bookmarks=0, Tue Jul 07 08:52]
+    @tempodotco ISLAM adalah ancaman non militer terbesar Indonesia, musnahkan Islam !!!
+
+@ethereads (2074063647614329273)  [likes=8, reposts=0, replies=1, bookmarks=5, Mon Jul 06 09:31]
+    @tempodotco Di sini tertulisnya "penyebaran budaya LGBTQ" tapi di bawah itu tidak disertai penjelasan siapa yg kemudian melakukan pengawasannya. Kriteria penyebaran budaya LGBTQ juga kurang jelas dalam perpeesnya. Apakah bakal bisa terlaksana apa cuma sebatas hitam di atas putih saja? 🤔
+
+@anaklarangan_ (2074047939316716034)  [likes=8, reposts=0, replies=1, bookmarks=0, Mon Jul 06 08:28]
+    @tempodotco Yang bukan ancaman dianggap ancaman, tapi orang gak jelas bisa masuk ke dalam circle dan gak dianggap ancaman.
+
+@krisnagandhy (2074061343305695623)  [likes=6, reposts=0, replies=0, bookmarks=0, Mon Jul 06 09:22]
+    @tempodotco berusaha memperbaiki image bjir wkwk padahal udah rahasia umum kalau beliau...
+
+@reyvanGali (2074063104766554185)  [likes=6, reposts=0, replies=0, bookmarks=0, Mon Jul 06 09:29]
+    @tempodotco Perbaiki caption tempo kocak, yg ditetapkan itu adalah Penyebaran LGBTQ. misal kampanye atau iklan LGBT, pesta atau kumpul2 LGBT, atau mengajak org lain secara paksa jd LGBTQ. Diluar dari itu mah aman saja. Gua bukan bela LGBT, tp biasakan membaca secara utuh
+
+@joni_member (2074057501813915747)  [likes=5, reposts=0, replies=1, bookmarks=0, Mon Jul 06 09:06]
+    @tempodotco PENJELASAN ISINYA: hanya sekedar menetapkan sebagai ancaman tapi tidak ada sanksi pidana untuk pelakunya seharusnya ada sanksi dan hukuman bagi pelaku eelgbtee bukan sekedar perpres omon2 untuk pencitraan, jadi itu perpres untuk cari aman orang istana aja
+
+@bambiiiblue (2074135311496716289)  [likes=5, reposts=1, replies=0, bookmarks=0, Mon Jul 06 14:16]
+    @tempodotco bro memilih menetapkan hal lain yang lebih genting drpd ini ig
+
+@f1rsthaitani (2074071473090929110)  [likes=5, reposts=0, replies=0, bookmarks=1, Mon Jul 06 10:02]
+    @tempodotco maaf ya jahat tp rasain noh temen boti gw yg 02 voters, dulu2 udh serem nge date sm cwk lu, skrg makin ada perpres nya🤣 kluarga lu yg fasis 1sl4m itu makin gampang buat persekusi elu
+
+@fakreeeeeea (2074094659966841002)  [likes=4, reposts=0, replies=0, bookmarks=0, Mon Jul 06 11:34]
+    @tempodotco Setuju.  Setiap negara berhak menetapkan prioritas kebijakan sesuai penilaiannya terhadap tantangan sosial dan keamanan.  Semoga lekas berkurang dan hilang itu lgbtq.
+
+@Seek_truth963 (2074085327967514913)  [likes=4, reposts=0, replies=0, bookmarks=0, Mon Jul 06 10:57]
+    @tempodotco Gue straight tapi ini mengerikan, semoga bukan dijadiin modus baru buat dapetin setoran kurban manusia...
+
+@transebatyuk (2074043123261649045)  [likes=3, reposts=0, replies=0, bookmarks=0, Mon Jul 06 08:09]
+    @tempodotco lebih mengancam lu dan oligarki lu wo
+
+@SoftHaze_ (2074058157983416376)  [likes=3, reposts=0, replies=0, bookmarks=0, Mon Jul 06 09:09]
+    @tempodotco Yang benerr🫪
+
+@tama_j4 (2074310836987040240)  [likes=3, reposts=1, replies=0, bookmarks=0, Tue Jul 07 01:53]
+    @tempodotco knp sih di perpres itu yg di highlight selalu part lgbt nya 🤣 demen amat kh sama lgbt, pdhal ada satu kata yg justru pelakunya lebih banyak daripda lgbt yaitu ✨RADIKALISME✨
+
+@emangagak (2074398241169486018)  [likes=19, reposts=2, replies=0, bookmarks=8, Tue Jul 07 07:40]
+    @tempodotco Jadi inget acara saat kampanye dulu. Si bang @kemalpalevi , serius amat nanya tentang LGBT ke pak Anies.
+
+@emerson_yuntho (2074134022012428471)  [likes=12, reposts=3, replies=0, bookmarks=5, Mon Jul 06 14:11]
+    @tempodotco Sementara itu ada kejadian di Luar Negeri https://tirto.id/gay-teriak-gay-para-politikus-anti-lgbt-yang-ternyata-homoseksual-cDGL
+
+@nasgorlover17 (2074158019852763218)  [likes=8, reposts=1, replies=0, bookmarks=0, Mon Jul 06 15:46]
+    padahal jaman kampanye, pake simbol2 🏳️‍🌈 buat meraup suara kelompok LGBT. dan beneran efektif krn bnyak kenalan gay gw jdi voters 02. skrang dibalekin kan lu semua. takut sama Anies yg katanya religius pdahal demokratis. aneh aja lu semua beharap haknya dilindungi padahal pelanggar HAM..? 😒🫠  https://x.com/dandhy_laksono/status/2073996560741044451?s=46
+
+(more available: --cursor DAAKCgABHYCchUt__p8LAAIAAAGcRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUNRY3lIK2NyaHFTQWh6SmJyZFFXeEh3SE1pTjVnMmFZYmtjeUloUEgxcEFZeHpKem9QWkc4RDlITWlxR3EzYnNLb2N5TThUbWRzZ0FSekllOHZ4bTNHT0hNaDZLY25iZ2NrY3lJQTVrNXB3Y3h6SWYxN0FtaURCSE1qMjFiT2IwYWdjeUlrc2hkdVFzUnpJaTgyS0d3R0hITWlWclFiYTRYc2N5YjQxcjVvd3doeklpWVNUbXZDTkhNaDhmMkFhOEZFY3lKMllwSnRnWHh6SWpXZXBXckJKSE1pQVJ1V2FzQXNjeUlUWHhwdHd0UnpJbFRTbkdzQThITWlBMnV4YW9iY2N5SDV1OXB0UXhSekl6ZWRlbW1DM0hNaUxXS3ZiSWRnY3lQVDVFUnRoaFJ6SWY5a1EyaEVHSE1pSlpzemJRWmNjeU9PNnpWb0FVaHpJb1ozblduRWhITWlJNStZYVFEZ2N5SHM3V3Rvd2xSeklsUVFRV3lIV0hNaDQvWUNiTUgwPQgAAwAAAAILAAQAAAAGQm90dG9tAAA)
+
+ python scripts/xpost.py tweet https://x.com/insidefolkative/status/2074012073470935547?a=Sc_WjrKolvCZDnDAzzs     
+### folkative (@insidefolkative)
+URL: https://x.com/insidefolkative/status/2074012073470935547  (source: fxtwitter)
+created: Mon Jul 06 06:06:26 +0000 2026
+likes=1565 reposts=181 replies=268 quotes=848 bookmarks=917 views=3248135
+
+Presiden Prabowo tetapkan LGBTQ jadi ancaman nonmiliter alam Peraturan Presiden Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025-2029. 
+
+Source: https://www.dpr.go.id/kegiatan-dpr/berita/Dukung-Penuh-Perpres-111-2025-LGBT-Ancaman-Nonmiliter-Harus-Dapat-Perhatian-Serius-66796
+
+https://www.tempo.co/politik/lewat-perpres-111-2025-prabowo-tetapkan-lgbtq-jadi-ancaman-nonmiliter-2273690
+media[photos]: https://pbs.twimg.com/media/HMheI2_bQAAWQrH.png?name=orig
+media[photos]: https://pbs.twimg.com/media/HMheL6EbwAACASP.png?name=orig
+PS D:\Coolyeah\DatMin\TBP\coba\x-post-reader> python scripts/xpost.py replies 2074012073470935547 --count 1000                                                 
+### ROOT POST: @insidefolkative (2074012073470935547)  [likes=1566, reposts=181, replies=268, bookmarks=917, Mon Jul 06 06:06]
+    Presiden Prabowo tetapkan LGBTQ jadi ancaman nonmiliter alam Peraturan Presiden Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025-2029.   Source: https://www.dpr.go.id/kegiatan-dpr/berita/Dukung-Penuh-Perpres-111-2025-LGBT-Ancaman-Nonmiliter-Harus-Dapat-Perhatian-Serius-66796  https://www.tempo.co/politik/lewat-perpres-111-2025-prabowo-tetapkan-lgbtq-jadi-ancaman-nonmiliter-2273690
+
+--- thread (1) ---
+@insidefolkative (2074012073470935547)  [likes=1566, reposts=181, replies=268, bookmarks=917, Mon Jul 06 06:06]
+    Presiden Prabowo tetapkan LGBTQ jadi ancaman nonmiliter alam Peraturan Presiden Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025-2029.   Source: https://www.dpr.go.id/kegiatan-dpr/berita/Dukung-Penuh-Perpres-111-2025-LGBT-Ancaman-Nonmiliter-Harus-Dapat-Perhatian-Serius-66796  https://www.tempo.co/politik/lewat-perpres-111-2025-prabowo-tetapkan-lgbtq-jadi-ancaman-nonmiliter-2273690
+
+--- replies (34) ---
+@axnist (2074090510143348790)  [likes=1251, reposts=135, replies=1, bookmarks=13, Mon Jul 06 11:18]
+    @insidefolkative This is the new G30S. Ispirasi dari ex mertua. Buah memang tidak jauh dari pohonnya jatuh. Presiden paling NPD, temperamen, manipulatif, korup & psikopat, sampe tumbalin rakyatnya sendiri lewat konflik horizontal buat nutupin gerilya perampokan mereka.
+
+@inimisac (2074034586078847241)  [likes=772, reposts=26, replies=3, bookmarks=1, Mon Jul 06 07:35]
+    @insidefolkative PADAHAL YANG CLOSETED GAY JUSTRU BIASANYA DARI AKMIL WKWKWKWKKWKEKW. YTTA YAAAAH.
+
+@shirabukenziroo (2074235721943240826)  [likes=737, reposts=68, replies=1, bookmarks=57, Mon Jul 06 20:55]
+    @insidefolkative and this is your child bitch, anak lo dulu bilang bakal legalin pernikahan sesama jenis wok
+
+@Utha_san (2074030795522765074)  [likes=367, reposts=35, replies=3, bookmarks=5, Mon Jul 06 07:20]
+    @insidefolkative Dah ketabk sih nnt yg bakalan jadi kambing hitamnya ya ini. Tahun 65 pki, tahun 98 etnis tionghoa. Coba pak confirm lgi tuh tuduhan amin rais ke si buna gimana
+
+@ciabjir (2074020757697695801)  [likes=293, reposts=6, replies=1, bookmarks=0, Mon Jul 06 06:40]
+    @insidefolkative dia dan pasangannya yg berlibur ke paris itu juga ancaman dong hehe💜
+
+@yudoyudo10 (2074019526141006074)  [likes=211, reposts=7, replies=0, bookmarks=4, Mon Jul 06 06:36]
+    @insidefolkative Giliran pas kampanye beda ya 🤣
+
+@delightlovaa (2074032287776407621)  [likes=195, reposts=10, replies=2, bookmarks=1, Mon Jul 06 07:26]
+    @insidefolkative Ini pemerintah kok kesannya manfaatin keributan masyarakat soal lgbt? Aneh bgt kalo UU nya udah diresmikan dari 2025 tapi digembar gemborkan di 2026 seolah UU nya baru diresmikan sekarang.
+
+@JBosphorus12 (2074023000148762799)  [likes=110, reposts=6, replies=1, bookmarks=0, Mon Jul 06 06:49]
+    @insidefolkative Sengaja lempar kebijakan kek gini biar orang ga fokus ke Hal yang jauh lebih destruktif.
+
+@ndah_345yw1n (2074026801882632285)  [likes=53, reposts=5, replies=5, bookmarks=12, Mon Jul 06 07:04]
+    Anehnya, kenapa baru heboh skrg yah? Kenapa 2025 adem ayem aja 🤔 peraturan ini pun hanya menggolongkan saja, gk ada pasalnya jadi klo ada yg smpe memukul org2 yg dianggap masuk kaum LGBT, yg mukul bsa kena pasal kekerasan.   Di negara rusia pun di sahkan UU itu isinya untuk yang mengadakan kaya pawai LGBT, bukan yg lagi jalan terlihat kemayu atau bencong pun gk akan di tangkap oleh polisi disana. Nah di pemikiran org indonesia, Rusia mensahkan UU untk LGBT dipikirannya akan di tangkap org2 yg lenjeh, bowtie gtu? Oh salah besar, yg di tangkap itu jga terbukti dia ikuti acara parade LGBT, trus pesta homo, baru bsa di tangkap. Tapi klo bowtie lenjeh jalan2 sendirian ya gak akan di tangkap walau udh disahkan itu UU oleh bapak Putin 😁😁 masih bnyk yg salah paham sma UU LGBT di Rusia.
+
+@WongIndonesiaOK (2074462448032333899)  [likes=48, reposts=4, replies=0, bookmarks=0, Tue Jul 07 11:56]
+    @insidefolkative Ini tah yg dimaksud ancaman itu?
+
+@Velino09 (2074289990272729210)  [likes=39, reposts=2, replies=2, bookmarks=0, Tue Jul 07 00:30]
+    @insidefolkative Ancaman yg sbnrnya itu si Wowo, dia sengaja fokus kan LGBT menolak lupa kinerjanya sprti MBG GK jls dan rupiah yg anjlok mmg pintar cr cela biar aman
+
+@datikhtr (2074014353955991669)  [likes=21, reposts=0, replies=2, bookmarks=0, Mon Jul 06 06:15]
+    @insidefolkative Nah untuk kali ini kami setuju Pak, rakyatmu ini realistis pak kalo program bagus ya diapresiasi tapi kalo kurang ya dikritik
+
+@joni_member (2074026875987587349)  [likes=10, reposts=1, replies=2, bookmarks=0, Mon Jul 06 07:05]
+    @insidefolkative Baca lagi isinya hanya ditetapkan sebagai ancaman saja tidak ada Sanski apapun bagi pelaku elggbtee seharusnya ada sanksi pidananya biar pelaku dan kaum elgbttee diproses hukum jadi ini Perpres cuma omon2 doang
+
+@cherry_naaa01 (2075189494689763559)  [likes=7, reposts=0, replies=0, bookmarks=0, Thu Jul 09 12:05]
+    @insidefolkative pengalihan isu💜
+
+@ctrlshiftmedia (2074016010609500461)  [likes=5, reposts=0, replies=0, bookmarks=0, Mon Jul 06 06:22]
+    @insidefolkative kenapa tiba2 presiden bahas lgbt ya, ada isu apakah? kok mimin gak tau
+
+@dewdropsde30515 (2074509016215200148)  [likes=5, reposts=0, replies=0, bookmarks=0, Tue Jul 07 15:01]
+    @insidefolkative Prabowo mending belajar lagi soal hak asasi manusia. Malu jadi presiden tapi gak ngerti HAM.
+
+@DarklordAmdusc (2074034806091063306)  [likes=5, reposts=0, replies=0, bookmarks=0, Mon Jul 06 07:36]
+    @insidefolkative di sana d katakan "BUDAYA" LGBT apa itu? BUDAYA?
+
+@Robert_69_ (2074879908720107585)  [likes=5, reposts=1, replies=0, bookmarks=0, Wed Jul 08 15:34]
+    @insidefolkative I don't know why hal kayak gini kok uda sampe dibahas sama Bapak Presiden kita  Apa kurang kerjaan kah??
+
+@banana_chitato (2074013036881596544)  [likes=4, reposts=0, replies=0, bookmarks=0, Mon Jul 06 06:10]
+    @insidefolkative Tumben bener pak, aku setuju. khirnya ada hal positif dari beliau 😂
+
+@caruviar (2074729357348933927)  [likes=4, reposts=0, replies=0, bookmarks=0, Wed Jul 08 05:36]
+    @insidefolkative Tiba” kebayang skenario lucu. Prabski netapin perpres lgbt, ada skandal anaknya atau doi sama bunted, doi didemo, doi lengser, gibran naik. Boom. Hidup jokowi
+
+@sukasukayapping (2074374305505591321)  [likes=4, reposts=0, replies=0, bookmarks=0, Tue Jul 07 06:05]
+    @insidefolkative oh my goddd. WHEN WILL HE STOP RULING THIS DAMN COUNTRY
+
+@namdolsw (2074781886271070349)  [likes=3, reposts=0, replies=0, bookmarks=1, Wed Jul 08 09:05]
+    @insidefolkative
+
+@Afzon_Dakka (2074161953816334344)  [likes=3, reposts=1, replies=0, bookmarks=0, Mon Jul 06 16:02]
+    @insidefolkative "penyebaran" ya guys, beda dengan melakukan aktivitas u/konsumsi pribadi!   #KonflikTetapHarusVertikal  #AcungkanJariTengahmu
+
+@TaeTaengie (2074084454457586079)  [likes=2, reposts=0, replies=0, bookmarks=0, Mon Jul 06 10:54]
+    @insidefolkative Tumben bikin kebijakan yg bener
+
+@rudysirwi (2074239476633944122)  [likes=2, reposts=0, replies=1, bookmarks=0, Mon Jul 06 21:10]
+    @insidefolkative Nasib mas Didit gimana ya?   Astaghfirullah subhanallah
+
+@WndSRl (2074015602738598170)  [likes=2, reposts=0, replies=0, bookmarks=0, Mon Jul 06 06:20]
+    @insidefolkative Urusin gaji guru pak
+
+@dairydaymee (2074084816472146156)  [likes=2, reposts=0, replies=0, bookmarks=0, Mon Jul 06 10:55]
+    @insidefolkative Di Perpres nya cuman dijadikan ancaman non militer tapi kalo aku gak salah baca gaada hukumannya apa atau dendanya berapa yaa
+
+@superredalbino (2074460088966975834)  [likes=2, reposts=0, replies=0, bookmarks=0, Tue Jul 07 11:46]
+    @insidefolkative Gausah jadi aneh di 60 negara dunia LGBT juga udah jadi ancaman, malah lebih keras. LGBT sudah masuk ranah kampanye, dibeberapa negara saking sudah kepalang bebas, anak² dipertontonkan ketelanjangan, aksi asusila, disiorientasi. Agak aneh sama yang masih pro kampanye ini.
+
+@rukidut (2074135601994252448)  [likes=2, reposts=0, replies=0, bookmarks=0, Mon Jul 06 14:17]
+    @insidefolkative Benar, Lahadalia Gibran Bowo Tedi Qaesang
+
+@adysis (2074027945262514266)  [likes=2, reposts=0, replies=1, bookmarks=0, Mon Jul 06 07:09]
+    @insidefolkative Ini yang dihikumi apanya? Orientasi seksualnya atau kegiatannya?
+
+@drogi22 (2074699174306881743)  [likes=2, reposts=0, replies=0, bookmarks=0, Wed Jul 08 03:36]
+    @insidefolkative Tolong ceraikan dulu suamimu baru bikin aturan begini smaa aja boong elu masih setia sama teddy tapi elu bikin aturan lgbt sebagai ancaman
+
+@babibanget (2074289177508938174)  [likes=12, reposts=3, replies=0, bookmarks=0, Tue Jul 07 00:27]
+    @insidefolkative begitulah 🙏🏼🙏🏼
+
+@avvogat_o (2074458450567061750)  [likes=5, reposts=1, replies=0, bookmarks=0, Tue Jul 07 11:40]
+    @insidefolkative https://x.com/i/status/2074370896551387295
+
+@Ryuu_Hecho (2074064242958078166)  [likes=12, reposts=2, replies=0, bookmarks=3, Mon Jul 06 09:33]
+    @insidefolkative ketika atasan ga pernah sejalan sama bawahannya, sementara Pigai di suatu dimensi yg lain:  https://x.com/i/status/2073967924298260757
+
+(more available: --cursor DAAKCgABHYCcy5-__p8LAAIAAAGQRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUNNY3lTcG1PdHBRZWh6SWM2cmMycUFLSE1rdDBHL2J3RG9jeUhGZ2hacUFSUnpJWnVQM1c1QTVITWhzWXp6YWtGMGN6STNad0pzUTV4eklZcEt5MmlFdEhNaWcwb1lhc1o4Y3lITjNveHFoQ1J6SWNBVVVXdkVTSE1oc2RIM2FjUlVjeVZzRVV0dUJ2aHpJWWpPNzJoRWFITXJQNkNSYm9NOGN5T2RPdjlwUUNCekl6MWM4MjhDZ0hNaWhKcy9hZ093Y3lJNXdxdHNRMWh6SjluVy9taEZhSE1uMCtFZGJZUFljeTNSSXB0dGdRUnpMR3lJRm1pQ05ITWhseFRqYjBQb2N5R0VRK3B1d2RSeklwbFI1R21BMkhNaGYzbExiVUlBY3l1dGJyZHVSSnh6Slc4R1BXc0I2SE1obzdoUGJZSzhjeUcxdGM1c0FXaHpLSXZXQzJpR1VITWhlL2dNYlFmc2N5YWh3dXR2QUdSekorSnNDMnNCTAgAAwAAAAILAAQAAAAGQm90dG9tAAA)
+
+python scripts/xpost.py tweet https://x.com/catchmeupco/status/2073987849293345240?a=3Jg-rUwq6PSAtYjD1pw     
+### Catch Me Up! (@catchmeupco)
+URL: https://x.com/catchmeupco/status/2073987849293345240  (source: fxtwitter)
+created: Mon Jul 06 04:30:10 +0000 2026
+likes=281 reposts=67 replies=61 quotes=247 bookmarks=66 views=59043
+
+Presiden Prabowo Subianto tetapkan LGBTQ sebagai ancaman nonmiliter, yang tertuang dalam Peraturan Presiden (Perpres) Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025–2029.
+
+Dalam lampiran Perpres tersebut, pemerintah mengelompokkan ancaman terhadap pertahanan negara menjadi tiga kategori, yaitu ancaman militer, ancaman nonmiliter, dan ancaman hibrida. LGBTQ sendiri termasuk dalam kelompok ancaman nonmiliter. 
+
+Perpres ini kemudian juga mendapat dukungan dari DPR RI. Anggota Komisi I DPR RI Oleh Soleh menyatakan bahwa LGBTQ perlu mendapat perhatian serius oleh pemerintah. "Saya mendukung penuh Perpres Nomor 111 Tahun 2025. Penerbitan Perpres  tersebut sudah sangat tepat karena penyebaran budaya LGBT memang sudah  menjadi ancaman nonmiliter yang harus mendapat perhatian serius.  Fenomena ini semakin masif dan menjadi tantangan bagi masa depan bangsa  Indonesia," ujar Oleh Soleh di Jakarta, Minggu (5/7/2026).
+media[photos]: https://pbs.twimg.com/media/HMhIBKpbgAAVEb1.jpg?name=orig
+PS D:\Coolyeah\DatMin\TBP\coba\x-post-reader> python scripts/xpost.py replies 2073987849293345240 --count 1000                                        
+### ROOT POST: @catchmeupco (2073987849293345240)  [likes=281, reposts=67, replies=61, bookmarks=66, Mon Jul 06 04:30]
+    Presiden Prabowo Subianto tetapkan LGBTQ sebagai ancaman nonmiliter, yang tertuang dalam Peraturan Presiden (Perpres) Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025–2029.  Dalam lampiran Perpres tersebut, pemerintah mengelompokkan ancaman terhadap pertahanan negara menjadi tiga kategori, yaitu ancaman militer, ancaman nonmiliter, dan ancaman hibrida. LGBTQ sendiri termasuk dalam kelompok ancaman nonmiliter.   Perpres ini kemudian juga mendapat dukungan dari DPR RI. Anggota Komisi I DPR RI Oleh Soleh menyatakan bahwa LGBTQ perlu mendapat perhatian serius oleh pemerintah. "Saya mendukung penuh Perpres Nomor 111 Tahun 2025. Penerbitan Perpres  tersebut sudah sangat tepat karena penyebaran budaya LGBT memang sudah  menjadi ancaman nonmiliter yang harus mendapat perhatian serius.  Fenomena ini semakin masif dan menjadi tantangan bagi masa depan bangsa  Indonesia," ujar Oleh Soleh di Jakarta, Minggu (5/7/2026).
+
+--- thread (1) ---
+@catchmeupco (2073987849293345240)  [likes=281, reposts=67, replies=61, bookmarks=66, Mon Jul 06 04:30]
+    Presiden Prabowo Subianto tetapkan LGBTQ sebagai ancaman nonmiliter, yang tertuang dalam Peraturan Presiden (Perpres) Nomor 111 Tahun 2025 tentang Kebijakan Umum Pertahanan Negara Tahun 2025–2029.  Dalam lampiran Perpres tersebut, pemerintah mengelompokkan ancaman terhadap pertahanan negara menjadi tiga kategori, yaitu ancaman militer, ancaman nonmiliter, dan ancaman hibrida. LGBTQ sendiri termasuk dalam kelompok ancaman nonmiliter.   Perpres ini kemudian juga mendapat dukungan dari DPR RI. Anggota Komisi I DPR RI Oleh Soleh menyatakan bahwa LGBTQ perlu mendapat perhatian serius oleh pemerintah. "Saya mendukung penuh Perpres Nomor 111 Tahun 2025. Penerbitan Perpres  tersebut sudah sangat tepat karena penyebaran budaya LGBT memang sudah  menjadi ancaman nonmiliter yang harus mendapat perhatian serius.  Fenomena ini semakin masif dan menjadi tantangan bagi masa depan bangsa  Indonesia," ujar Oleh Soleh di Jakarta, Minggu (5/7/2026).
+
+--- replies (34) ---
+@grassssjelly (2073990888997761214)  [likes=48, reposts=9, replies=2, bookmarks=1, Mon Jul 06 04:42]
+    @catchmeupco ada banyak banget yang masih perlu dibenahi. wilayah bencana banjir Aceh belum pulih, ekonomi menurun, lapangan kerja gak tersedia, tapi malah lebih milih ngurusin LGBTQ. kek gak ada yang lebih urgent aja buat diurusin
+
+@fdyahayu (2073988834925445333)  [likes=47, reposts=0, replies=1, bookmarks=0, Mon Jul 06 04:34]
+    @catchmeupco Punten, bapak amnesia kah?  Apa lupa sama mas didiet yak
+
+@dinoRR__ (2074000037525467486)  [likes=44, reposts=1, replies=0, bookmarks=0, Mon Jul 06 05:18]
+    @catchmeupco Mbah Amin Rais melihat ini
+
+@Aninzuliii (2074054038275178517)  [likes=13, reposts=0, replies=0, bookmarks=0, Mon Jul 06 08:53]
+    @catchmeupco Gw tau pola ni org, apa yg keluar dari mulutnya adalah kelakuan dirinya sendiri🙏🏻
+
+@tulisansuriyana (2074019991138296295)  [likes=6, reposts=0, replies=1, bookmarks=1, Mon Jul 06 06:37]
+    @catchmeupco Kocak gaming, anaknya sendiri dianggap ancaman gitu? Ini licence ke orang-orang untuk bebas to do something ke anaknya sendiri, kah?
+
+@issukio (2074080911914869037)  [likes=2, reposts=0, replies=0, bookmarks=0, Mon Jul 06 10:39]
+    @catchmeupco human rights violator dikasih kuasa ya gini jadinya.
+
+@NetizenAsbun (2073993670286843950)  [likes=2, reposts=0, replies=1, bookmarks=0, Mon Jul 06 04:53]
+    @catchmeupco padahal yang ngomong ini adalah ancaman yang paling besar
+
+@Weird_Satay (2074101799745917203)  [likes=1, reposts=0, replies=0, bookmarks=0, Mon Jul 06 12:02]
+    @catchmeupco Ya iya lah tiap malam di ancam buntet ngambek kalo ga di kulum2.
+
+@setuja (2074020602843963511)  [likes=1, reposts=0, replies=3, bookmarks=2, Mon Jul 06 06:40]
+    @catchmeupco Dilihat dari kalimatnya, yang merupakan ancaman apakah keberadaan LGBT-nya atau penyebarannya?
+
+@yhbetegwjing (2074080802598711646)  [likes=1, reposts=0, replies=0, bookmarks=0, Mon Jul 06 10:39]
+    @catchmeupco Dia dengan sadar menetapkan dirinya sendiri dan seskabnya menjadi ancaman negara, boti nggak jauh jauh dari ketololan
+
+@AngWiraw (2074065677053485401)  [likes=1, reposts=0, replies=0, bookmarks=0, Mon Jul 06 09:39]
+    @catchmeupco Setujuuu!! Tapi nanti Pak, sekarang masih banyak isu yang jauh lebih penting
+
+@sukatehkotak (2074094767865291099)  [likes=1, reposts=0, replies=0, bookmarks=0, Mon Jul 06 11:35]
+    @catchmeupco heleh heleh, UU yang kemaren dijanjikan buat segera dibahas apa kabar. cepet amat ngurusin yang beginian
+
+@guru_skeptis (2073996218892726386)  [likes=1, reposts=0, replies=2, bookmarks=1, Mon Jul 06 05:03]
+    @grok, analisis secara objektif dan mendalam apa yang sebenarnya sedang terjadi terkait gerakan anti biotik / anti boti /anti lgbt yang belakang sangat marak, kemudian rilis fakultas psikologi UI yang mengkategorikannya sebagai masalah psikologis, dan sekarang bahkan presiden menerbitkan Perpres yang memasukan LGBT sebagai ancaman non militer. Bagaimana kamu melihat korelasinya? apakah ini strategi politik populis atau ada hal tersembunyi lainnya
+
+@zeeyaa__ (2074079002743259424)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 10:32]
+    @catchmeupco :((((
+
+@SonnklokV (2074278366384181361)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 23:44]
+    @catchmeupco Hei! Antek2 boti
+
+@agusssedihh (2074149695610577006)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 15:13]
+    @catchmeupco Loh anaknya?
+
+@micinsedapgurih (2074038842773188721)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 07:52]
+    @catchmeupco Omon omon
+
+@iidRizki (2074135990655217769)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 14:18]
+    @catchmeupco Harusnya militer sih biar bisa dibredel sekalian.
+
+@disheaveIed (2073999570355589518)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 05:16]
+    @catchmeupco this is so weird
+
+@Umbi_red (2074015972030308457)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 06:21]
+    @catchmeupco
+
+@hendraddict (2074091067276951982)  [likes=0, reposts=0, replies=2, bookmarks=0, Mon Jul 06 11:20]
+    @catchmeupco Paham LGBTQ dan sponsornya harus ditindak tegas
+
+@omsenank1 (2074032974325305369)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 07:29]
+    @catchmeupco Yg gay/bi di parcok parjo itu banyak Yg penting jangan dipamerin Gak bisa dihapusken tp bisa dikendaliken bisa kawin normal Yg jd ancaman itu kalo sudah dipamerken orgy kriminal itu
+
+@saidrobby77 (2074069820484804941)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 09:55]
+    @catchmeupco Self report dong
+
+@richiiii_rich (2074009310552817933)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 05:55]
+    @catchmeupco Ga kaget kalo bentar lagi ada yang go public🫥
+
+@AndyKeg (2074001027356148159)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 05:22]
+    @catchmeupco baru kali ini kita sepakat ndut 🫰
+
+@sabzerose (2074017498203406604)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 06:27]
+    @catchmeupco Nah loh kan kasian Buna klo ketahuan 😥
+
+@PutuSambernyawa (2073994211863732425)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 04:55]
+    @catchmeupco Kebijakan populis utk meraih simpati...
+
+@hamctaro (2074037344156737907)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 07:46]
+    @catchmeupco lagi berantem ama teddy kah?
+
+@shuamorol (2074054607018627099)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 08:55]
+    @catchmeupco Elu jadi ancaman satu negara wok
+
+@manekitsukii (2074163442928541918)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 16:07]
+    @catchmeupco
+
+@jepunlembayung (2074022109865746562)  [likes=0, reposts=0, replies=0, bookmarks=0, Mon Jul 06 06:46]
+    @catchmeupco kasian anaknya. Aslikkk!
+
+@DarklordAmdusc (2074015292699590724)  [likes=47, reposts=13, replies=4, bookmarks=3, Mon Jul 06 06:19]
+    @catchmeupco Klo kek gini2 bukan "ancaman" ya? Pdhl korbannya jelas. Traumanya seumur hidup. Kejadiannya hampir tiap bulan ada..
+
+@MulutT38058 (2074357278158045610)  [likes=1, reposts=0, replies=0, bookmarks=0, Tue Jul 07 04:58]
+    @catchmeupco Pemerintah Tegaskan Ketahanan Nasional Hadapi Ancaman Nonmiliter, Perpres 111/2025 Masukkan Penyebaran Budaya LGBTQ dalam Kebijakan Pertahanan  https://satusuarabangsa.com/nasional/sosbud/pemerintah-tegaskan-ketahanan-nasional-hadapi-ancaman-nonmiliter-perpres-111-2025-masukkan-penyebaran-budaya-lgbtq-dalam-kebijakan-pertahanan/
+
+@badutstamford (2074059935495983400)  [likes=0, reposts=0, replies=1, bookmarks=0, Mon Jul 06 09:16]
+    @catchmeupco Semoga dengan perpres ini bisa mengurangi pergerakan mereka untuk melakukan penyimpangan dan kalau bisa semoga lekas taubat ya 🤲🏻
+
+(more available: --cursor DAAKCgABHYCdM1A__p8LAAIAAAGQRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUNNY3lHUHREbHZCREJ6SWo3NlJtbUZaSE1tWTlEM2JRYW9jeUhYNXpWdGhjeHpJcHRZdzJvR3VITWhJOWVHYk1kZ2N5TENaQ2RxUkV4ekluWUJDV25GZUhNaHlBRjhiVUJrY3lHSHJqQlpBUkJ6SXFqUE5HMkZiSE1pS2hjSWJrU2djeU9pcGRkdGczaHpJblptMkdxRXRITWhVOGlOYndiOGN5RkNTbEpxd2Noeklaci9wV3lCM0hNamNLS25hWUc0Y3lKdmRNcHZCSUJ6SVZBdXMyakZlSE1obU1YemJZZWNjeUdnZXl0cWdnaHpJaGEwZ0c1QWJITWhPUVMvYklDNGN5Rk9lNTF1Umpoekl6N0c2MjNCcEhNaVRnMGxhNFUwY3lFNi9TRnFneVJ6SVhIcTRXb0VOSE1oSjIxM2JnTlVjeUV1NW5odXd2aHpKVVM4cG0xQnhITWlGS0xSYlFCVWN5R0tKdDFwZ2FSeklkMWE1MjdCeAgAAwAAAAILAAQAAAAGQm90dG9tAAA)
+
