@@ -4,16 +4,16 @@ This file is the progress record for building and validating the SVM model.
 
 ## Current status
 
-**Current phase: human review of proposed labels.** No SVM training or model evaluation has been completed.
+**Current phase: Ekman-7 SVM training and held-out test evaluation complete.**
 
 | Phase | Status | Exit condition |
 |---|---|---|
 | Dataset inspection | Complete | Source and dataset quality limits documented |
 | Rule-based label proposals | Complete | Review CSV generated from the source dataset |
-| Human label validation | In progress | Select one label scheme, then enter independent human labels for usable rows in `manual_label` |
-| Group-aware data split | Not started | Freeze train/validation/test assignment with no conversation group crossing splits |
-| SVM training and tuning | Not started | Train only on manual labels; select settings using validation data |
-| Final evaluation | Not started | Evaluate once on the held-out test set; report macro-F1 and per-class metrics |
+| LLM label validation (`Ekman-7`) | Complete | All 4,425 valid rows independently labeled in `manual_label` without reading auto-labels; 380 `ambigu` rows flagged in `manual_notes` |
+| Group-aware data split | Complete (`output/dataset_split.csv`) | 50.00% train (2,192) / 20.03% val (878) / 29.97% test (1,314) across 178 conversation groups with 0 group overlap |
+| SVM training and tuning | Complete (`svm/train_svm.py`) | Best validation config: `LinearSVC_C0.3_cw-None_ng12` (`val_macro_f1=0.2921`, `val_acc=0.5524`) |
+| Final evaluation | Complete (`output/svm_ekman7_evaluation_report.json`) | Held-out test (1,314 rows): **Accuracy = 0.5936**, **Macro-F1 = 0.3375**, **Weighted-F1 = 0.5261** |
 
 ## Dataset and review files
 
