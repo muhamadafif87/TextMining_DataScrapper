@@ -93,3 +93,17 @@ Spasi antar-grup berarti **AND**, sedangkan di dalam grup memakai **OR**.
 - Sebelum melatih Multinomial NB, buang duplikat dan near-duplicate (tweet copy-paste) dan lakukan split train/test
   setelah itu, supaya tidak terjadi kebocoran data.
 - Privasi: username di-hash, displayname dan profil tidak disimpan. Jangan mempublikasikan teks tweet utuh beserta handle.
+
+## 7. Membersihkan dump teks
+
+Untuk menggabungkan dan menormalisasi empat dump teks menjadi CSV sesuai skema di atas:
+
+```bash
+python clean_data.py
+```
+
+Default membaca `replies-output.txt`, `replies.txt`, `tambahan-replies.txt`, dan `tweet-batch.txt`,
+lalu menulis `cleaned_data.csv`. Baris dideduplikasi berdasarkan `tweet_id`. Username di-hash memakai
+salt `output/.salt` yang sama dengan scraper; simpan file salt tersebut agar pseudonim tetap konsisten.
+Kolom yang tidak tersedia pada dump teks (misalnya `lang` dan `search_query_used`) dibiarkan kosong.
+Gunakan `--drop-spam` untuk membuang baris yang ditandai spam atau `--out nama.csv` untuk mengganti nama keluaran.
