@@ -1,4 +1,4 @@
-"""Dashboard-ready inference API for the Perpres 111/2025 SVM emotion models."""
+"""Dashboard-ready inference API for the Perpres 111/2025 SVM sentiment and emotion models."""
 from __future__ import annotations
 
 import json
@@ -14,6 +14,8 @@ from svm.preprocessing import preprocess_text
 DEFAULT_MODELS_DIR = Path(__file__).resolve().parent.parent / "models"
 
 SCHEME_FILENAMES = {
+    "sentiment3": "svm_sentiment_pipeline.joblib",
+    "sentiment": "svm_sentiment_pipeline.joblib",
     "ekman7": "svm_ekman7_pipeline.joblib",
     "main5": "svm_5class_pipeline.joblib",
     "9class": "svm_9class_pipeline.joblib",
@@ -21,45 +23,61 @@ SCHEME_FILENAMES = {
 }
 
 DEFAULT_UI_STYLE: dict[str, dict[str, str]] = {
+    # Sentiment classes
+    "positif": {"emoji": "😊", "color_hex": "#2CA02C", "label_id": "Positif"},
+    "netral": {"emoji": "😐", "color_hex": "#7F7F7F", "label_id": "Netral"},
+    "negatif": {"emoji": "😡", "color_hex": "#D62728", "label_id": "Negatif"},
+    # Emotion classes (backward compatibility)
     "marah": {"emoji": "😡", "color_hex": "#D62728", "label_id": "Marah"},
     "senang": {"emoji": "😊", "color_hex": "#2CA02C", "label_id": "Senang"},
     "sedih": {"emoji": "😢", "color_hex": "#1F77B4", "label_id": "Sedih"},
     "takut": {"emoji": "😨", "color_hex": "#FF7F0E", "label_id": "Takut"},
     "jijik": {"emoji": "🤢", "color_hex": "#8C564B", "label_id": "Jijik"},
     "terkejut": {"emoji": "😲", "color_hex": "#9467BD", "label_id": "Terkejut"},
-    "netral": {"emoji": "😐", "color_hex": "#7F7F7F", "label_id": "Netral"},
     "sarkas": {"emoji": "😏", "color_hex": "#E377C2", "label_id": "Sarkas"},
     "kecewa": {"emoji": "😞", "color_hex": "#17BECF", "label_id": "Kecewa"},
 }
 
 
-class EmotionPredictor:
-    """Wrapper around a trained SVM emotion classification pipeline."""
+class SentimentPredictor:
+    """Wrapper around a trained SVM sentiment classification pipeline (3 classes)."""
 
-    def __init__(self, scheme: str = "ekman7", models_dir: str | Path | None = None) -> None:
+    def __init__(
+        self,
+        scheme: str = "sentiment3",
+        models_dir: str | Path | None = None,
+    ) -> None:
         if scheme not in SCHEME_FILENAMES:
             raise ValueError(f"Unsupported scheme '{scheme}'. Choose from {list(SCHEME_FILENAMES)}")
         self.scheme = scheme
         self.models_dir = Path(models_dir) if models_dir is not None else DEFAULT_MODELS_DIR
         model_path = self.models_dir / SCHEME_FILENAMES[scheme]
         if not model_path.is_file():
-            raise FileNotFoundError(
-                f"Model file not found: {model_path}. Run `python -m svm.train_svm` first."
-            )
+            # Fall back to best_svm_pipeline if specific scheme file not present
+            fallback_path = self.models_dir / SCHEME_FILENAMES["best"]
+            if fallback_path.is_file():
+                model_path = fallback_path
+            else:
+                raise FileNotFoundError(
+                    f"Model file not found: {model_path}. Run `python -m svm.train_svm` first."
+                )
         self.pipeline = joblib.load(model_path)
         self.metadata = self._load_metadata()
 
     def _load_metadata(self) -> dict:
         meta_path = self.models_dir / "model_metadata.json"
         if meta_path.is_file():
-            return json.loads(meta_path.read_text(encoding="utf-8"))
+            try:
+                return json.loads(meta_path.read_text(encoding="utf-8"))
+            except Exception:
+                return {}
         return {}
 
-    def _get_style(self, emotion: str) -> dict[str, str]:
-        meta_styles = self.metadata.get("emotion_styles", {})
-        if emotion in meta_styles:
-            return meta_styles[emotion]
-        return DEFAULT_UI_STYLE.get(emotion, {"emoji": "💬", "color_hex": "#4A5568", "label_id": emotion.title()})
+    def _get_style(self, label: str) -> dict[str, str]:
+        meta_styles = self.metadata.get("ui_styles", {})
+        if label in meta_styles:
+            return meta_styles[label]
+        return DEFAULT_UI_STYLE.get(label, {"emoji": "💬", "color_hex": "#4A5568", "label_id": label.title()})
 
     def _matched_vocab_features(self, cleaned_text: str) -> list[str]:
         if not cleaned_text:
@@ -82,7 +100,7 @@ class EmotionPredictor:
             return []
 
     def predict_single(self, text: str) -> dict:
-        """Predict emotion label and class probabilities for one input text."""
+        """Predict sentiment label and class probabilities for one input text."""
         raw_text = "" if text is None else str(text)
         cleaned = preprocess_text(raw_text)
         probs = self.pipeline.predict_proba([raw_text])[0]
@@ -97,7 +115,7 @@ class EmotionPredictor:
             "input_text": raw_text,
             "cleaned_text": cleaned,
             "scheme": self.scheme,
-            "predicted_emotion": pred_label,
+            "predicted_sentiment": pred_label,
             "emoji": style.get("emoji", "💬"),
             "color_hex": style.get("color_hex", "#4A5568"),
             "confidence": confidence,
@@ -106,7 +124,7 @@ class EmotionPredictor:
         }
 
     def predict_batch(self, texts: Iterable[str]) -> pd.DataFrame:
-        """Predict emotion labels and probabilities for a batch of texts."""
+        """Predict sentiment labels and probabilities for a batch of texts."""
         text_list = ["" if t is None else str(t) for t in texts]
         cleaned_list = [preprocess_text(t) for t in text_list]
         probs = self.pipeline.predict_proba(text_list)
@@ -118,7 +136,7 @@ class EmotionPredictor:
             row: dict[str, object] = {
                 "input_text": raw,
                 "cleaned_text": cln,
-                "predicted_emotion": classes[best_idx],
+                "predicted_sentiment": classes[best_idx],
                 "confidence": round(float(prob_row[best_idx]), 4),
             }
             for cls, p in zip(classes, prob_row):
@@ -127,18 +145,46 @@ class EmotionPredictor:
         return pd.DataFrame(records)
 
 
+class EmotionPredictor(SentimentPredictor):
+    """Backward-compatible wrapper around an SVM emotion classification pipeline."""
+
+    def __init__(self, scheme: str = "ekman7", models_dir: str | Path | None = None) -> None:
+        super().__init__(scheme=scheme, models_dir=models_dir)
+
+    def predict_single(self, text: str) -> dict:
+        res = super().predict_single(text)
+        res["predicted_emotion"] = res.pop("predicted_sentiment")
+        return res
+
+    def predict_batch(self, texts: Iterable[str]) -> pd.DataFrame:
+        df = super().predict_batch(texts)
+        if "predicted_sentiment" in df.columns:
+            df = df.rename(columns={"predicted_sentiment": "predicted_emotion"})
+        return df
+
+
+def predict_sentiment(text: str, scheme: str = "sentiment3") -> dict:
+    """Convenience one-shot sentiment prediction function for dashboard integration."""
+    return SentimentPredictor(scheme=scheme).predict_single(text)
+
+
+def predict_sentiment_batch(texts: Iterable[str], scheme: str = "sentiment3") -> pd.DataFrame:
+    """Convenience batch sentiment prediction function for dashboard integration."""
+    return SentimentPredictor(scheme=scheme).predict_batch(texts)
+
+
 def predict_emotion(text: str, scheme: str = "ekman7") -> dict:
-    """Convenience one-shot prediction function for dashboard integration."""
+    """Backward-compatible convenience function for emotion prediction."""
     return EmotionPredictor(scheme=scheme).predict_single(text)
 
 
 def predict_batch(texts: Iterable[str], scheme: str = "ekman7") -> pd.DataFrame:
-    """Convenience batch prediction function for dashboard integration."""
+    """Backward-compatible convenience batch function for emotion prediction."""
     return EmotionPredictor(scheme=scheme).predict_batch(texts)
 
 
 if __name__ == "__main__":
-    predictor = EmotionPredictor(scheme="ekman7")
+    predictor = SentimentPredictor(scheme="sentiment3")
     if len(sys.argv) > 1:
         query = " ".join(sys.argv[1:])
         res = predictor.predict_single(query)
@@ -146,16 +192,16 @@ if __name__ == "__main__":
     else:
         demo_texts = [
             "Ini mah pengalihan isu doang biar rakyat lupa soal korupsi dan ekonomi!",
-            "Setuju banget pak Prabowo, kebijakan tepat buat menjaga moral bangsa!",
-            "Khawatir banget kalau pasal ini malah memicu persekusi dan konflik horizontal.",
-            "Kasihan minoritas yang terus jadi korban perundungan, miris melihatnya.",
-            "Najis banget liat kelakuan oknum sampah yang sok suci di sosmed.",
-            "Kok tiba-tiba baru heboh sekarang ya padahal Perpres 111 sudah terbit tahun 2025?",
+            "Setuju banget pak Prabowo, kebijakan tepat buat menjaga moral bangsa dan generasi muda!",
+            "Presiden Prabowo menandatangani Perpres 111 Tahun 2025 tentang penanganan terpadu.",
+            "Khawatir aturan ini disalahgunakan oknum untuk persekusi dan melanggar HAM.",
+            "Mantap langkah tegas pemerintah, dukung penuh penegakan aturan ini!",
+            "Kira-kira kapan juknis teknis implementasi Perpres ini mulai disosialisasikan?",
         ]
-        print("=== Demo Prediksi Emosi SVM (Skema Ekman 7 Kelas) ===")
+        print("=== Demo Prediksi Sentimen 3 Kelas SVM (Perpres No. 111/2025) ===")
         for sample in demo_texts:
             out = predictor.predict_single(sample)
             print(
-                f"{out['emoji']} [{out['predicted_emotion']:8s} | {out['confidence']*100:5.1f}%] "
+                f"{out['emoji']} [{out['predicted_sentiment']:7s} | {out['confidence']*100:5.1f}%] "
                 f"{sample}"
             )

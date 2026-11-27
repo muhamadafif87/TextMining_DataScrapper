@@ -1,0 +1,125 @@
+{
+  "trained_at": "2026-11-27T12:16:02.526525+00:00",
+  "scheme": "sentiment3",
+  "fit_scope": "train_plus_val",
+  "random_state": 42,
+  "data_stats": {
+    "total_rows": 4633,
+    "valid_rows": 4368,
+    "empty_after_preprocessing": 9,
+    "duplicates_removed": 22,
+    "usable_rows": 4337,
+    "unique_groups": 177,
+    "noise_rows_excluded": 265,
+    "empty_labels_excluded": 0
+  },
+  "split_summary": {
+    "splits": {
+      "train": {
+        "rows": 2169,
+        "pct": 50.01,
+        "groups": 104,
+        "class_counts": {
+          "netral": 1132,
+          "negatif": 764,
+          "positif": 273
+        }
+      },
+      "val": {
+        "rows": 867,
+        "pct": 19.99,
+        "groups": 25,
+        "class_counts": {
+          "netral": 453,
+          "negatif": 305,
+          "positif": 109
+        }
+      },
+      "test": {
+        "rows": 1301,
+        "pct": 30.0,
+        "groups": 48,
+        "class_counts": {
+          "netral": 679,
+          "negatif": 458,
+          "positif": 164
+        }
+      }
+    },
+    "group_overlaps": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    }
+  },
+  "best_config": {
+    "name": "SVC_RBF_C1.0_cw-balanced_ng12",
+    "model_type": "svc_rbf",
+    "C": 1.0,
+    "gamma": "scale",
+    "class_weight": "balanced",
+    "word_ngram_range": [
+      1,
+      2
+    ],
+    "max_word_features": 10000,
+    "max_char_features": 12000,
+    "min_df": 2
+  },
+  "validation_best_macro_f1": 0.4985,
+  "test_metrics": {
+    "accuracy": 0.6341,
+    "macro_f1": 0.5752,
+    "weighted_f1": 0.6187,
+    "per_class": {
+      "positif": {
+        "precision": 0.7261904761904762,
+        "recall": 0.3719512195121951,
+        "f1-score": 0.49193548387096775,
+        "support": 164.0
+      },
+      "netral": {
+        "precision": 0.6435185185185185,
+        "recall": 0.8188512518409425,
+        "f1-score": 0.7206740116655865,
+        "support": 679.0
+      },
+      "negatif": {
+        "precision": 0.5892351274787535,
+        "recall": 0.45414847161572053,
+        "f1-score": 0.5129469790382244,
+        "support": 458.0
+      },
+      "accuracy": 0.6341275941583397,
+      "macro avg": {
+        "precision": 0.6529813740625827,
+        "recall": 0.5483169809896193,
+        "f1-score": 0.5751854915249263,
+        "support": 1301.0
+      },
+      "weighted avg": {
+        "precision": 0.6348301310949895,
+        "recall": 0.6341275941583397,
+        "f1-score": 0.6187123671600913,
+        "support": 1301.0
+      }
+    }
+  },
+  "ui_styles": {
+    "positif": {
+      "emoji": "😊",
+      "color_hex": "#2CA02C",
+      "label_id": "Positif"
+    },
+    "netral": {
+      "emoji": "😐",
+      "color_hex": "#7F7F7F",
+      "label_id": "Netral"
+    },
+    "negatif": {
+      "emoji": "😡",
+      "color_hex": "#D62728",
+      "label_id": "Negatif"
+    }
+  }
+}

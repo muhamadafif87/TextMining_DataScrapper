@@ -1,14 +1,17 @@
-"""Group-aware SVM emotion classification training and evaluation pipeline.
+"""Group-aware SVM sentiment and emotion classification training and evaluation pipeline.
 
 Follows svm/WORKFLOW.md:
-- Trains strictly on validated `manual_label` values (never copies heuristic auto-labels).
+- Supports 3-class sentiment analysis ('positif', 'netral', 'negatif') on `cleaned_data.csv`
+  with automatic exclusion of rows labeled 'noise'.
+- Also maintains backward compatibility with Ekman-7 and Main-5 emotion schemes on
+  `output/cleaned_data_auto_label_review.csv`.
 - Deduplicates identical preprocessed texts before splitting.
 - Performs group-aware stratified 50% train / 20% validation / 30% test splitting
   by `conversation_id` (falling back to `root_tweet_id` or `tweet_id`) to prevent
   conversation leakage across splits.
 - Tunes SVM hyperparameters strictly on the validation set using Macro-F1.
 - Evaluates once on the held-out test set and exports artifacts compatible with
-  `svm.predictor.EmotionPredictor`.
+  `svm.predictor.SentimentPredictor` and `EmotionPredictor`.
 """
 from __future__ import annotations
 
@@ -41,12 +44,17 @@ from svm.predictor import DEFAULT_UI_STYLE, SCHEME_FILENAMES
 from svm.preprocessing import TextCleanerTransformer, preprocess_text
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_INPUT = PROJECT_ROOT / "output" / "cleaned_data_auto_label_review.csv"
+DEFAULT_SENTIMENT_INPUT = PROJECT_ROOT / "cleaned_data.csv"
+DEFAULT_EMOTION_INPUT = PROJECT_ROOT / "output" / "cleaned_data_auto_label_review.csv"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "output"
 DEFAULT_MODELS_DIR = PROJECT_ROOT / "models"
-DEFAULT_SPLIT_FILE = DEFAULT_OUTPUT_DIR / "dataset_split.csv"
+DEFAULT_SENTIMENT_SPLIT = DEFAULT_OUTPUT_DIR / "dataset_split_sentiment.csv"
+DEFAULT_EMOTION_SPLIT = DEFAULT_OUTPUT_DIR / "dataset_split.csv"
+
+CLASSES_SENTIMENT3 = ["positif", "netral", "negatif"]
 
 SCHEME_CLASSES: dict[str, list[str]] = {
+    "sentiment3": list(CLASSES_SENTIMENT3),
     "ekman7": list(CLASSES_EKMAN7),
     "main5": list(CLASSES_MAIN5),
     "9class": list(CLASSES_9),
@@ -73,10 +81,10 @@ def _is_truthy(value: object) -> bool:
 
 def load_labeled_dataset(
     input_path: Path,
-    scheme: str = "ekman7",
+    scheme: str = "sentiment3",
     deduplicate: bool = True,
 ) -> tuple[pd.DataFrame, dict[str, int]]:
-    """Load validated manual labels, verify integrity, and deduplicate cleaned text."""
+    """Load validated labels, filter noise / invalid rows, verify integrity, and deduplicate."""
     if scheme not in SCHEME_CLASSES:
         raise ValueError(f"Unsupported scheme '{scheme}'. Choose from {list(SCHEME_CLASSES)}")
 
@@ -87,47 +95,85 @@ def load_labeled_dataset(
             "conversation_id": "string",
             "root_tweet_id": "string",
             "in_reply_to_tweet_id": "string",
+            "sentiment_label": "string",
             "manual_label": "string",
         },
         low_memory=False,
     )
 
-    required_cols = {"tweet_id", "raw_text", "is_valid_opinion", "manual_label"}
-    missing_cols = required_cols - set(df.columns)
-    if missing_cols:
-        raise ValueError(f"Missing required columns in {input_path}: {sorted(missing_cols)}")
-
     total_rows = len(df)
-    valid_mask = df["is_valid_opinion"].map(_is_truthy)
-    valid_df = df.loc[valid_mask].copy()
-    valid_rows = len(valid_df)
 
-    valid_df["manual_label"] = (
-        valid_df["manual_label"].fillna("").astype(str).str.strip().str.lower()
-    )
-    unlabeled_count = int((valid_df["manual_label"] == "").sum())
-    if unlabeled_count > 0:
-        raise ValueError(
-            f"Found {unlabeled_count} valid opinion rows with empty `manual_label`. "
-            "Complete manual labeling before training."
-        )
+    if scheme == "sentiment3":
+        if "raw_text" not in df.columns or "sentiment_label" not in df.columns:
+            raise ValueError(
+                f"Missing required columns ('raw_text', 'sentiment_label') in {input_path}"
+            )
 
-    allowed = set(SCHEME_CLASSES[scheme])
-    observed = set(valid_df["manual_label"].unique())
-    if scheme == "main5" and observed.issubset(set(CLASSES_EKMAN7)):
-        valid_df["target_label"] = valid_df["manual_label"].map(EKMAN7_TO_MAIN5)
-    else:
+        cleaned_lbl = df["sentiment_label"].fillna("").astype(str).str.strip().str.lower()
+        noise_mask = cleaned_lbl == "noise"
+        noise_count = int(noise_mask.sum())
+        empty_lbl_mask = cleaned_lbl == ""
+        empty_lbl_count = int(empty_lbl_mask.sum())
+
+        valid_mask = (~noise_mask) & (~empty_lbl_mask)
+        valid_df = df.loc[valid_mask].copy()
+        valid_rows = len(valid_df)
+
+        valid_df["target_label"] = cleaned_lbl.loc[valid_mask]
+        allowed = set(CLASSES_SENTIMENT3)
+        observed = set(valid_df["target_label"].unique())
         invalid_labels = observed - allowed
         if invalid_labels:
             raise ValueError(
-                f"Invalid labels for scheme '{scheme}': {sorted(invalid_labels)}. "
+                f"Invalid sentiment labels found: {sorted(invalid_labels)}. "
                 f"Expected subset of {sorted(allowed)}."
             )
-        valid_df["target_label"] = valid_df["manual_label"]
+    else:
+        required_cols = {"tweet_id", "raw_text", "is_valid_opinion", "manual_label"}
+        missing_cols = required_cols - set(df.columns)
+        if missing_cols:
+            raise ValueError(f"Missing required columns in {input_path}: {sorted(missing_cols)}")
+
+        valid_mask = df["is_valid_opinion"].map(_is_truthy)
+        valid_df = df.loc[valid_mask].copy()
+        valid_rows = len(valid_df)
+
+        valid_df["manual_label"] = (
+            valid_df["manual_label"].fillna("").astype(str).str.strip().str.lower()
+        )
+        unlabeled_count = int((valid_df["manual_label"] == "").sum())
+        if unlabeled_count > 0:
+            raise ValueError(
+                f"Found {unlabeled_count} valid opinion rows with empty `manual_label`. "
+                "Complete manual labeling before training."
+            )
+
+        allowed = set(SCHEME_CLASSES[scheme])
+        observed = set(valid_df["manual_label"].unique())
+        if scheme == "main5" and observed.issubset(set(CLASSES_EKMAN7)):
+            valid_df["target_label"] = valid_df["manual_label"].map(EKMAN7_TO_MAIN5)
+        else:
+            invalid_labels = observed - allowed
+            if invalid_labels:
+                raise ValueError(
+                    f"Invalid labels for scheme '{scheme}': {sorted(invalid_labels)}. "
+                    f"Expected subset of {sorted(allowed)}."
+                )
+            valid_df["target_label"] = valid_df["manual_label"]
 
     # Build conversation group key to prevent thread leakage across splits
-    conv_id = valid_df.get("conversation_id", pd.Series("", index=valid_df.index)).fillna("").astype(str).str.strip()
-    root_id = valid_df.get("root_tweet_id", pd.Series("", index=valid_df.index)).fillna("").astype(str).str.strip()
+    conv_id = (
+        valid_df.get("conversation_id", pd.Series("", index=valid_df.index))
+        .fillna("")
+        .astype(str)
+        .str.strip()
+    )
+    root_id = (
+        valid_df.get("root_tweet_id", pd.Series("", index=valid_df.index))
+        .fillna("")
+        .astype(str)
+        .str.strip()
+    )
     tweet_id = valid_df["tweet_id"].fillna("").astype(str).str.strip()
     valid_df["group_id"] = conv_id.where(conv_id != "", root_id).where(
         (conv_id != "") | (root_id != ""), tweet_id
@@ -147,14 +193,17 @@ def load_labeled_dataset(
         duplicates_removed = before_dedup - len(valid_df)
 
     valid_df = valid_df.reset_index(drop=True)
-    stats = {
+    stats: dict[str, int] = {
         "total_rows": total_rows,
-        "valid_opinion_rows": valid_rows,
+        "valid_rows": valid_rows,
         "empty_after_preprocessing": empty_cleaned,
         "duplicates_removed": duplicates_removed,
         "usable_rows": len(valid_df),
         "unique_groups": int(valid_df["group_id"].nunique()),
     }
+    if scheme == "sentiment3":
+        stats["noise_rows_excluded"] = noise_count
+        stats["empty_labels_excluded"] = empty_lbl_count
     return valid_df, stats
 
 
@@ -181,7 +230,6 @@ def create_group_stratified_split(
     n_classes = len(classes)
     n_total = len(df)
 
-    # Precompute group sizes and per-class counts
     group_ids: list[str] = []
     group_counts: list[np.ndarray] = []
     group_sizes: list[int] = []
@@ -195,13 +243,12 @@ def create_group_stratified_split(
 
     total_class_counts = np.sum(group_counts, axis=0)
     target_split_sizes = ratio_vec * n_total
-    target_class_matrix = np.outer(ratio_vec, total_class_counts)  # (3, n_classes)
+    target_class_matrix = np.outer(ratio_vec, total_class_counts)
 
     rng = np.random.default_rng(random_state)
     best_cost = float("inf")
     best_assignment: dict[str, str] = {}
 
-    # Sort largest groups first, with small random tie-breaking perturbations across restarts
     size_arr = np.array(group_sizes, dtype=float)
     for restart in range(n_restarts):
         if restart == 0:
@@ -239,7 +286,6 @@ def create_group_stratified_split(
             cur_classes[best_s] += g_vec
             assignment[group_ids[idx]] = split_names[best_s]
 
-        # Penalize if any split is completely missing a class that has >= 3 groups
         missing_penalty = 0.0
         for c_idx in range(n_classes):
             if np.sum(cur_classes[:, c_idx] == 0) > 0:
@@ -284,7 +330,7 @@ def verify_split_integrity(df: pd.DataFrame) -> dict[str, Any]:
 
 
 def build_svm_pipeline(config: dict[str, Any], random_state: int = 42) -> Pipeline:
-    """Build a scikit-learn TF-IDF + SVM pipeline compatible with EmotionPredictor."""
+    """Build a scikit-learn TF-IDF + SVM pipeline compatible with Predictor."""
     word_vec = TfidfVectorizer(
         ngram_range=tuple(config["word_ngram_range"]),
         max_features=config["max_word_features"],
@@ -353,7 +399,7 @@ def build_svm_pipeline(config: dict[str, Any], random_state: int = 42) -> Pipeli
 def get_candidate_configs(include_rbf: bool = True) -> list[dict[str, Any]]:
     """Return candidate SVM hyperparameter configurations for validation tuning."""
     candidates: list[dict[str, Any]] = []
-    for c_val in (0.1, 0.3, 1.0, 3.0):
+    for c_val in (0.1, 0.3, 0.5, 1.0, 3.0):
         for cw in ("balanced", None):
             candidates.append(
                 {
@@ -367,33 +413,36 @@ def get_candidate_configs(include_rbf: bool = True) -> list[dict[str, Any]]:
                     "min_df": 2,
                 }
             )
-    candidates.append(
-        {
-            "name": "LinearSVC_C0.5_cw-balanced_ng13",
-            "model_type": "linear_svc_calibrated",
-            "C": 0.5,
-            "class_weight": "balanced",
-            "word_ngram_range": [1, 3],
-            "max_word_features": 15000,
-            "max_char_features": 18000,
-            "min_df": 2,
-        }
-    )
-    if include_rbf:
-        for c_val in (1.0, 3.0, 10.0):
+    for c_val in (0.3, 0.5, 1.0):
+        for cw in ("balanced", None):
             candidates.append(
                 {
-                    "name": f"SVC_RBF_C{c_val}_cw-balanced_ng12",
-                    "model_type": "svc_rbf",
+                    "name": f"LinearSVC_C{c_val}_cw-{cw}_ng13",
+                    "model_type": "linear_svc_calibrated",
                     "C": c_val,
-                    "gamma": "scale",
-                    "class_weight": "balanced",
-                    "word_ngram_range": [1, 2],
-                    "max_word_features": 10000,
-                    "max_char_features": 12000,
+                    "class_weight": cw,
+                    "word_ngram_range": [1, 3],
+                    "max_word_features": 15000,
+                    "max_char_features": 18000,
                     "min_df": 2,
                 }
             )
+    if include_rbf:
+        for c_val in (1.0, 3.0):
+            for cw in ("balanced", None):
+                candidates.append(
+                    {
+                        "name": f"SVC_RBF_C{c_val}_cw-{cw}_ng12",
+                        "model_type": "svc_rbf",
+                        "C": c_val,
+                        "gamma": "scale",
+                        "class_weight": cw,
+                        "word_ngram_range": [1, 2],
+                        "max_word_features": 10000,
+                        "max_char_features": 12000,
+                        "min_df": 2,
+                    }
+                )
     return candidates
 
 
@@ -404,7 +453,7 @@ def save_confusion_matrix_plot(
     title: str,
 ) -> None:
     """Save confusion matrix heatmap PNG."""
-    fig, ax = plt.subplots(figsize=(8, 6.5))
+    fig, ax = plt.subplots(figsize=(7, 6))
     im = ax.imshow(cm, interpolation="nearest", cmap=plt.cm.Blues)
     ax.figure.colorbar(im, ax=ax)
     ax.set(
@@ -413,7 +462,7 @@ def save_confusion_matrix_plot(
         xticklabels=labels,
         yticklabels=labels,
         title=title,
-        ylabel="True label (manual_label)",
+        ylabel="True label",
         xlabel="Predicted label (SVM)",
     )
     plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
@@ -428,7 +477,8 @@ def save_confusion_matrix_plot(
                 ha="center",
                 va="center",
                 color="white" if cm[i, j] > thresh else "black",
-                fontsize=9,
+                fontsize=10,
+                fontweight="bold",
             )
 
     fig.tight_layout()
@@ -439,11 +489,16 @@ def save_confusion_matrix_plot(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Train and evaluate group-aware SVM emotion classifier on manual labels."
+        description="Train and evaluate group-aware SVM sentiment/emotion classifier."
     )
-    parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
-    parser.add_argument("--scheme", choices=["ekman7", "main5", "9class"], default="ekman7")
-    parser.add_argument("--split-file", type=Path, default=DEFAULT_SPLIT_FILE)
+    parser.add_argument("--input", type=Path, default=None, help="Input CSV path")
+    parser.add_argument(
+        "--scheme",
+        choices=["sentiment3", "ekman7", "main5", "9class"],
+        default="sentiment3",
+        help="Classification scheme (default: sentiment3)",
+    )
+    parser.add_argument("--split-file", type=Path, default=None, help="Path to frozen split CSV")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--models-dir", type=Path, default=DEFAULT_MODELS_DIR)
     parser.add_argument("--random-state", type=int, default=42)
@@ -469,6 +524,14 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    # Determine default paths based on chosen scheme
+    if args.input is None:
+        args.input = DEFAULT_SENTIMENT_INPUT if args.scheme == "sentiment3" else DEFAULT_EMOTION_INPUT
+    if args.split_file is None:
+        args.split_file = (
+            DEFAULT_SENTIMENT_SPLIT if args.scheme == "sentiment3" else DEFAULT_EMOTION_SPLIT
+        )
+
     print(f"[1/5] Loading validated dataset from {args.input} (scheme={args.scheme})...")
     df, data_stats = load_labeled_dataset(args.input, scheme=args.scheme, deduplicate=True)
     print(f"      Data stats: {json.dumps(data_stats, ensure_ascii=False)}")
@@ -479,8 +542,9 @@ def main() -> None:
         split_map = dict(zip(split_df["tweet_id"], split_df["split"]))
         df["split"] = df["tweet_id"].map(split_map)
         if df["split"].isna().any():
+            missing_count = int(df["split"].isna().sum())
             raise ValueError(
-                f"Frozen split file {args.split_file} does not cover all usable tweet_ids."
+                f"Frozen split file {args.split_file} has {missing_count} unmapped tweet_ids."
             )
         print(f"      Reused frozen split from {args.split_file}")
     else:
@@ -574,6 +638,7 @@ def main() -> None:
     cm = confusion_matrix(y_test, test_pred, labels=labels_ordered)
 
     print("\n=== Held-Out Test Set Evaluation ===")
+    print(f"Scheme         : {args.scheme}")
     print(f"Fit scope      : {fit_scope}")
     print(f"Test Accuracy  : {test_acc:.4f}")
     print(f"Test Macro-F1  : {test_macro_f1:.4f}")
@@ -613,7 +678,7 @@ def main() -> None:
             "weighted_f1": round(test_weighted_f1, 4),
             "per_class": cls_report_dict,
         },
-        "emotion_styles": {k: DEFAULT_UI_STYLE[k] for k in SCHEME_CLASSES[args.scheme] if k in DEFAULT_UI_STYLE},
+        "ui_styles": {k: DEFAULT_UI_STYLE[k] for k in SCHEME_CLASSES[args.scheme] if k in DEFAULT_UI_STYLE},
     }
 
     report_json = args.output_dir / f"svm_{args.scheme}_evaluation_report.json"
