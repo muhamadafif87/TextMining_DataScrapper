@@ -1,58 +1,48 @@
 {
-  "trained_at": "2026-11-26T16:47:37.500916+00:00",
-  "scheme": "ekman7",
+  "trained_at": "2026-11-27T12:16:02.526525+00:00",
+  "scheme": "sentiment3",
   "fit_scope": "train_plus_val",
   "random_state": 42,
   "data_stats": {
     "total_rows": 4633,
-    "valid_opinion_rows": 4425,
-    "empty_after_preprocessing": 3,
-    "duplicates_removed": 38,
-    "usable_rows": 4384,
-    "unique_groups": 178
+    "valid_rows": 4368,
+    "empty_after_preprocessing": 9,
+    "duplicates_removed": 22,
+    "usable_rows": 4337,
+    "unique_groups": 177,
+    "noise_rows_excluded": 265,
+    "empty_labels_excluded": 0
   },
   "split_summary": {
     "splits": {
       "train": {
-        "rows": 2192,
-        "pct": 50.0,
-        "groups": 106,
+        "rows": 2169,
+        "pct": 50.01,
+        "groups": 104,
         "class_counts": {
-          "marah": 1158,
-          "netral": 493,
-          "sedih": 161,
-          "senang": 117,
-          "terkejut": 94,
-          "takut": 92,
-          "jijik": 77
+          "netral": 1132,
+          "negatif": 764,
+          "positif": 273
         }
       },
       "val": {
-        "rows": 878,
-        "pct": 20.03,
-        "groups": 24,
+        "rows": 867,
+        "pct": 19.99,
+        "groups": 25,
         "class_counts": {
-          "marah": 462,
-          "netral": 198,
-          "sedih": 65,
-          "senang": 48,
-          "terkejut": 37,
-          "takut": 37,
-          "jijik": 31
+          "netral": 453,
+          "negatif": 305,
+          "positif": 109
         }
       },
       "test": {
-        "rows": 1314,
-        "pct": 29.97,
+        "rows": 1301,
+        "pct": 30.0,
         "groups": 48,
         "class_counts": {
-          "marah": 694,
-          "netral": 296,
-          "sedih": 96,
-          "senang": 71,
-          "terkejut": 56,
-          "takut": 55,
-          "jijik": 46
+          "netral": 679,
+          "negatif": 458,
+          "positif": 164
         }
       }
     },
@@ -63,116 +53,73 @@
     }
   },
   "best_config": {
-    "name": "LinearSVC_C0.3_cw-None_ng12",
-    "model_type": "linear_svc_calibrated",
-    "C": 0.3,
-    "class_weight": null,
+    "name": "SVC_RBF_C1.0_cw-balanced_ng12",
+    "model_type": "svc_rbf",
+    "C": 1.0,
+    "gamma": "scale",
+    "class_weight": "balanced",
     "word_ngram_range": [
       1,
       2
     ],
-    "max_word_features": 12000,
-    "max_char_features": 15000,
+    "max_word_features": 10000,
+    "max_char_features": 12000,
     "min_df": 2
   },
-  "validation_best_macro_f1": 0.2921,
+  "validation_best_macro_f1": 0.4985,
   "test_metrics": {
-    "accuracy": 0.5936,
-    "macro_f1": 0.3375,
-    "weighted_f1": 0.5261,
+    "accuracy": 0.6341,
+    "macro_f1": 0.5752,
+    "weighted_f1": 0.6187,
     "per_class": {
-      "marah": {
-        "precision": 0.6012891344383057,
-        "recall": 0.9409221902017291,
-        "f1-score": 0.7337078651685394,
-        "support": 694.0
-      },
-      "senang": {
-        "precision": 0.8333333333333334,
-        "recall": 0.14084507042253522,
-        "f1-score": 0.24096385542168675,
-        "support": 71.0
-      },
-      "sedih": {
-        "precision": 0.4,
-        "recall": 0.14583333333333334,
-        "f1-score": 0.21374045801526717,
-        "support": 96.0
-      },
-      "takut": {
-        "precision": 1.0,
-        "recall": 0.10909090909090909,
-        "f1-score": 0.19672131147540983,
-        "support": 55.0
-      },
-      "jijik": {
-        "precision": 0.8125,
-        "recall": 0.2826086956521739,
-        "f1-score": 0.41935483870967744,
-        "support": 46.0
-      },
-      "terkejut": {
-        "precision": 0.7,
-        "recall": 0.125,
-        "f1-score": 0.21212121212121213,
-        "support": 56.0
+      "positif": {
+        "precision": 0.7261904761904762,
+        "recall": 0.3719512195121951,
+        "f1-score": 0.49193548387096775,
+        "support": 164.0
       },
       "netral": {
-        "precision": 0.5167785234899329,
-        "recall": 0.26013513513513514,
-        "f1-score": 0.34606741573033706,
-        "support": 296.0
+        "precision": 0.6435185185185185,
+        "recall": 0.8188512518409425,
+        "f1-score": 0.7206740116655865,
+        "support": 679.0
       },
-      "accuracy": 0.593607305936073,
+      "negatif": {
+        "precision": 0.5892351274787535,
+        "recall": 0.45414847161572053,
+        "f1-score": 0.5129469790382244,
+        "support": 458.0
+      },
+      "accuracy": 0.6341275941583397,
       "macro avg": {
-        "precision": 0.6948429987516531,
-        "recall": 0.286347904833688,
-        "f1-score": 0.3375252795203042,
-        "support": 1314.0
+        "precision": 0.6529813740625827,
+        "recall": 0.5483169809896193,
+        "f1-score": 0.5751854915249263,
+        "support": 1301.0
       },
       "weighted avg": {
-        "precision": 0.608373492328669,
-        "recall": 0.593607305936073,
-        "f1-score": 0.526062034838761,
-        "support": 1314.0
+        "precision": 0.6348301310949895,
+        "recall": 0.6341275941583397,
+        "f1-score": 0.6187123671600913,
+        "support": 1301.0
       }
     }
   },
-  "emotion_styles": {
-    "marah": {
-      "emoji": "😡",
-      "color_hex": "#D62728",
-      "label_id": "Marah"
-    },
-    "senang": {
+  "ui_styles": {
+    "positif": {
       "emoji": "😊",
       "color_hex": "#2CA02C",
-      "label_id": "Senang"
-    },
-    "sedih": {
-      "emoji": "😢",
-      "color_hex": "#1F77B4",
-      "label_id": "Sedih"
-    },
-    "takut": {
-      "emoji": "😨",
-      "color_hex": "#FF7F0E",
-      "label_id": "Takut"
-    },
-    "jijik": {
-      "emoji": "🤢",
-      "color_hex": "#8C564B",
-      "label_id": "Jijik"
-    },
-    "terkejut": {
-      "emoji": "😲",
-      "color_hex": "#9467BD",
-      "label_id": "Terkejut"
+      "label_id": "Positif"
     },
     "netral": {
       "emoji": "😐",
       "color_hex": "#7F7F7F",
       "label_id": "Netral"
+    },
+    "negatif": {
+      "emoji": "😡",
+      "color_hex": "#D62728",
+      "label_id": "Negatif"
     }
   }
 }
