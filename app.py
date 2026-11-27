@@ -37,9 +37,30 @@ STOPWORDS_ID = {
 }
 TOKEN_RE = re.compile(r"[a-zA-Z]{3,}")
 
+SENTIMENT_MAP = {
+    "positif": "Positif",
+    "positive": "Positif",
+    "senang": "Positif",
+    "bahagia": "Positif",
+    "joy": "Positif",
+    "negatif": "Negatif",
+    "negative": "Negatif",
+    "marah": "Negatif",
+    "jijik": "Negatif",
+    "sedih": "Negatif",
+    "takut": "Negatif",
+    "anger": "Negatif",
+    "disgust": "Negatif",
+    "sadness": "Negatif",
+    "fear": "Negatif",
+    "netral": "Netral",
+    "neutral": "Netral",
+    "terkejut": "Netral",
+    "surprise": "Netral",
+}
+
 st.set_page_config(
     page_title="Analisis Sentimen & Emosi Perpres 111/2025",
-    page_icon="📊",
     layout="wide",
 )
 
@@ -74,7 +95,7 @@ def load_dataset(
 
     df_split = pd.read_csv(split_path, dtype={"tweet_id": "string"})
 
-    # Gabungkan dengan teks dari cleaned_data_auto_label_review.csv atau cleaned_data.csv
+    # Gabungkan dengan teks & kolom sentiment_label (jika ada) dari CSV sumber
     text_source = None
     for candidate in (Path(review_str), Path(cleaned_str)):
         if candidate.exists():
@@ -88,19 +109,48 @@ def load_dataset(
             (c for c in ("cleaned_text", "clean_text", "raw_text") if c in text_source.columns),
             None,
         )
+        merge_cols = ["tweet_id"]
         if text_col:
+            merge_cols.append(text_col)
+        if "sentiment_label" in text_source.columns and "sentiment_label" not in df_split.columns:
+            merge_cols.append("sentiment_label")
+
+        if len(merge_cols) > 1:
             merged = df_split.merge(
-                text_source[["tweet_id", text_col]].drop_duplicates("tweet_id"),
+                text_source[merge_cols].drop_duplicates("tweet_id"),
                 on="tweet_id",
                 how="left",
             )
-            merged["teks_analisis"] = merged[text_col].fillna("").astype(str)
-            if text_col == "raw_text" and preprocess_text is not None:
-                merged["teks_analisis"] = merged["teks_analisis"].map(preprocess_text)
+            if text_col:
+                merged["teks_analisis"] = merged[text_col].fillna("").astype(str)
+                if text_col == "raw_text" and preprocess_text is not None:
+                    merged["teks_analisis"] = merged["teks_analisis"].map(preprocess_text)
+            else:
+                merged["teks_analisis"] = ""
             return merged
 
     df_split["teks_analisis"] = ""
     return df_split
+
+
+def get_sentiment_series(df: pd.DataFrame) -> pd.Series:
+    """Ambil label sentimen (Positif, Negatif, Netral) dari kolom sentiment_label atau mapping target_label."""
+    mapped_target = (
+        df["target_label"]
+        .fillna("")
+        .astype(str)
+        .str.strip()
+        .str.lower()
+        .map(SENTIMENT_MAP)
+        .fillna("Netral")
+    )
+
+    if "sentiment_label" in df.columns:
+        raw_sent = df["sentiment_label"].fillna("").astype(str).str.strip().str.lower()
+        mapped_sent = raw_sent.map(SENTIMENT_MAP)
+        return mapped_sent.fillna(mapped_target)
+
+    return mapped_target
 
 
 @st.cache_data(show_spinner="Menghitung frekuensi kata...")
@@ -121,10 +171,13 @@ def render_dashboard(df: pd.DataFrame, meta: dict | None) -> None:
         "Analisis Sentimen Publik terhadap Pencantuman Isu LGBTQ+ sebagai Ancaman Nonmiliter dalam Perpres Nomor 111 Tahun 2025"
     )
 
+    st.divider()
+    
     st.subheader("Sumber Data")
     st.write("Postingan/Tweet publik di platform X/Twitter dengan query pencarian:")
     st.write('**"ancaman non militer" OR "ancaman nonmiliter" OR "perpres 111" OR "perpres no 111"**')
     st.write("**lgbt OR lgbtq**")
+    st.write("")
 
     data_stats = (meta or {}).get("data_stats", {})
     total_raw = data_stats.get("total_rows")
@@ -146,11 +199,58 @@ def render_dashboard(df: pd.DataFrame, meta: dict | None) -> None:
         f"{total_clean:,}",
         f"{pct_remaining:.1f}% siap latih",
         delta_color="off",
+        delta_arrow="off"
     )
     c3.metric("Jumlah Kelas Label", len(classes))
+    st.write("")
+    
+    # Statistik Sentimen (Positif, Negatif, Netral) - Diagram Lingkaran
+    st.subheader("Statistik Sentimen Publik")
+    sent_series = get_sentiment_series(df)
+    sentiment_order = ["Positif", "Negatif", "Netral"]
+    sent_counts = sent_series.value_counts()
+
+    sent_df = pd.DataFrame(
+        {
+            "Sentimen": sentiment_order,
+            "Jumlah": [int(sent_counts.get(s, 0)) for s in sentiment_order],
+        }
+    )
+    total_sent = sent_df["Jumlah"].sum()
+    sent_df["Persentase"] = (
+        (sent_df["Jumlah"] / total_sent * 100) if total_sent > 0 else 0.0
+    )
+
+    col_pie, col_stat = st.columns([1.4, 1])
+    with col_pie:
+        fig_pie = px.pie(
+            sent_df,
+            names="Sentimen",
+            values="Jumlah",
+            color="Sentimen",
+            color_discrete_map={
+                "Positif": "#2ECC71",
+                "Negatif": "#E74C3C",
+                "Netral": "#95A5A6",
+            },
+        )
+        fig_pie.update_traces(
+            textposition="inside",
+            textinfo="label+value+percent",
+            hovertemplate="Sentimen: %{label}<br>Jumlah: %{value:,} tweet<br>Persentase: %{percent}<extra></extra>",
+        )
+        fig_pie.update_layout(height=400, margin=dict(t=20, b=20, l=20, r=20))
+        st.plotly_chart(fig_pie, use_container_width=True)
+
+    with col_stat:
+        for _, row in sent_df.iterrows():
+            st.metric(
+                label=f"Sentimen {row['Sentimen']}",
+                value=f"{row['Jumlah']:,} tweet"
+            )
 
     # Distribusi Kelas
-    st.subheader("Distribusi Kelas Sentimen")
+    st.subheader("Distribusi Kelas Emosi / Target Label")
     dist = labels.value_counts().rename_axis("kelas").reset_index(name="jumlah")
     dist["persentase"] = dist["jumlah"] / dist["jumlah"].sum() * 100
     dist["label_teks"] = dist.apply(
