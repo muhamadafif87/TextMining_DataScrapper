@@ -109,3 +109,29 @@ Kolom yang tidak tersedia pada dump teks (misalnya `lang` dan `search_query_used
 Kolom tambahan `root_tweet_text` berisi teks tweet root untuk setiap reply jika tweet root tersedia di dump
 yang dibaca; kolom ini terpisah dari `raw_text` reply.
 Gunakan `--drop-spam` untuk membuang baris yang ditandai spam atau `--out nama.csv` untuk mengganti nama keluaran.
+
+## 8. Menjalankan Prototipe Web (Dashboard & Evaluasi SVM)
+
+Prototipe web dibangun menggunakan **Streamlit** (`app.py`) untuk menampilkan ringkasan dataset, distribusi kelas, kata dominan (*top keywords*), serta metrik evaluasi dan *confusion matrix* model SVM.
+
+1. **Pastikan dependensi terpasang:**
+   ```bash
+   pip install -r requirements.txt
+
+2. **Pastikan artifact model sudah tersedia** 
+Jika file metadata dan hasil evaluasi di folder models/ serta output/ belum dibuat, jalankan skrip training terlebih dahulu:
+
+Bash
+python -m svm.train_svm
+
+3. **Jalankan aplikasi web**
+
+Bash
+streamlit run app.py
+Browser akan otomatis membuka alamat http://localhost:8501.
+
+**Catatan:**
+
+Untuk auto-reload tampilan saat mengedit kode app.py, jalankan dengan flag streamlit run app.py --server.runOnSave true.
+
+Setiap kali python -m svm.train_svm dijalankan ulang (misalnya setelah mengubah parameter, skema klasifikasi, atau menambah data latih), seluruh grafik dan metrik di web otomatis menyesuaikan tanpa perlu mengubah kode app.py.

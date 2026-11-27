@@ -1,3 +1,12 @@
 # Versi yang dipakai saat script ini diuji (Nov 2026). Kunci ulang dengan `pip freeze` jika perlu.
 twscrape==0.21.1
 tzdata==2026.6
+
+streamlit>=1.37
+pandas>=2.0
+numpy>=1.24
+plotly>=5.18
+wordcloud>=1.9
+pillow>=10.0
+scikit-learn>=1.3
+joblib>=1.3
