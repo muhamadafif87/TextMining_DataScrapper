@@ -106,4 +106,6 @@ Default membaca `replies-output.txt`, `replies.txt`, `tambahan-replies.txt`, dan
 lalu menulis `cleaned_data.csv`. Baris dideduplikasi berdasarkan `tweet_id`. Username di-hash memakai
 salt `output/.salt` yang sama dengan scraper; simpan file salt tersebut agar pseudonim tetap konsisten.
 Kolom yang tidak tersedia pada dump teks (misalnya `lang` dan `search_query_used`) dibiarkan kosong.
+Kolom tambahan `root_tweet_text` berisi teks tweet root untuk setiap reply jika tweet root tersedia di dump
+yang dibaca; kolom ini terpisah dari `raw_text` reply.
 Gunakan `--drop-spam` untuk membuang baris yang ditandai spam atau `--out nama.csv` untuk mengganti nama keluaran.

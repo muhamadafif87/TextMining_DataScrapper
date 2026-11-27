@@ -3,3 +3,4 @@ accounts.db
 __pycache__/
 .venv/
 coba/
+output/.salt

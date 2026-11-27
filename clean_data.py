@@ -25,6 +25,7 @@ FIELDS = [
     "search_query_used",
     "scrape_type",
     "root_tweet_id",
+    "root_tweet_text",
     "is_reply",
     "in_reply_to_tweet_id",
     "lang",
@@ -125,6 +126,7 @@ def _record(
         "search_query_used": "",
         "scrape_type": "reply" if is_reply else "search",
         "root_tweet_id": root_id if is_reply else "",
+        "root_tweet_text": "",
         "is_reply": str(is_reply),
         "in_reply_to_tweet_id": root_id if is_reply else "",
         "lang": "",
@@ -305,7 +307,19 @@ def merge_duplicate(existing: dict[str, str], incoming: dict[str, str]) -> None:
         existing["scrape_type"] = "search"
         existing["is_reply"] = "False"
         existing["root_tweet_id"] = ""
+        existing["root_tweet_text"] = ""
         existing["in_reply_to_tweet_id"] = ""
+
+
+def attach_root_tweet_text(rows_by_id: dict[str, dict[str, str]]) -> None:
+    root_text_by_id = {
+        tweet_id: row["raw_text"]
+        for tweet_id, row in rows_by_id.items()
+        if row["is_reply"] != "True" and row["raw_text"]
+    }
+    for row in rows_by_id.values():
+        if row["is_reply"] == "True" and not row["root_tweet_text"]:
+            row["root_tweet_text"] = root_text_by_id.get(row["root_tweet_id"], "")
 
 
 def load_salt(path: Path) -> str:
@@ -345,6 +359,7 @@ def main() -> None:
             else:
                 rows_by_id[row["tweet_id"]] = row
 
+    attach_root_tweet_text(rows_by_id)
     rows = list(rows_by_id.values())
     if args.drop_spam:
         rows = [row for row in rows if row["is_spam_suspect"] == "False"]
